@@ -1,0 +1,91 @@
+{
+    "error_string": "Success.",
+    "export_time": 1078,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 14,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 298.7248840332031,
+                "Bridge": 359.343017578125,
+                "Custom": 385.7672119140625,
+                "Flush": 25.0,
+                "Gap infill": 167.28761291503906,
+                "Inner wall": 4397.98095703125,
+                "Internal solid infill": 2130.47900390625,
+                "Outer wall": 4149.64501953125,
+                "Overhang wall": 3.936628818511963,
+                "Sparse infill": 3986.16796875,
+                "Top surface": 221.20166015625,
+                "Travel": 2145.7392578125,
+                "Undefined": 2129.18359375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 84.4621353149414,
+                    "total_used_g": 84.4621353149414
+                }
+            ],
+            "generate_support_material_time": 58,
+            "id": 1,
+            "infill_time": 809,
+            "layer_filament_change": 0,
+            "main_predication": 17838.056640625,
+            "make_perimeters_time": 632,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 62.41135025024414,
+                        "height": 58.78989791870117,
+                        "width": 54.60993194580078,
+                        "x": 128.99998474121094,
+                        "y": 125.09927368164063,
+                        "z": 0.0
+                    },
+                    "id": 57,
+                    "name": "lidar-chapel.stl",
+                    "triangle_count": 2958
+                },
+                {
+                    "bbox": {
+                        "depth": 62.41135025024414,
+                        "height": 57.3914909362793,
+                        "width": 54.609928131103516,
+                        "x": 72.39009094238281,
+                        "y": 125.09927368164063,
+                        "z": 0.0
+                    },
+                    "id": 68,
+                    "name": "architectural-chapel.stl",
+                    "triangle_count": 2836
+                },
+                {
+                    "bbox": {
+                        "depth": 54.609928131103516,
+                        "height": 57.3914909362793,
+                        "width": 62.41135025024414,
+                        "x": 96.80987548828125,
+                        "y": 68.48937225341797,
+                        "z": 0.0
+                    },
+                    "id": 79,
+                    "name": "hybrid-chapel.stl",
+                    "triangle_count": 4626
+                }
+            ],
+            "sliced_time": 3204,
+            "sliced_time_with_cache": 1506,
+            "total_predication": 18257.26953125,
+            "triangle_count": 10420,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 12.0,
+    "wall_loops": 3
+}

@@ -1,0 +1,1580 @@
+{
+  "type": "FeatureCollection",
+  "name": "Merton historic core OSM footprints",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:27700"
+    }
+  },
+  "source": "\u00a9 OpenStreetMap contributors, ODbL1.0",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 39606739,
+        "name": "Merton College Chapel",
+        "osm_tags": {
+          "addr:housename": "OX1 4JD",
+          "addr:street": "Merton Street",
+          "amenity": "place_of_worship",
+          "building": "university",
+          "denomination": "anglican",
+          "learning": "oxford_college",
+          "name": "Merton College Chapel",
+          "official_name": "Chapel of St Mary and St John",
+          "operator": "Merton College",
+          "ref:dove": "16203",
+          "religion": "christian",
+          "source": "Bing",
+          "tourism": "attraction",
+          "wikidata": "Q6820717",
+          "wikipedia": "en:Merton College Chapel"
+        },
+        "ridge_agl_m": 19.8,
+        "eave_agl_m": 14.8,
+        "height_method": "Choir/transept ridge estimated19.8mAGL from DSM excluding crossing tower; eaves13.0mAGL",
+        "roof_width_m": 37.76
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451719.6696073155,
+              206082.89260619384
+            ],
+            [
+              451690.698392929,
+              206075.73288462166
+            ],
+            [
+              451691.2025707723,
+              206073.69140028482
+            ],
+            [
+              451692.79423064925,
+              206067.2563115633
+            ],
+            [
+              451693.7162209179,
+              206063.51727447362
+            ],
+            [
+              451692.4491145609,
+              206063.20397420356
+            ],
+            [
+              451687.20845018607,
+              206061.9156433076
+            ],
+            [
+              451685.18381717696,
+              206061.41661831603
+            ],
+            [
+              451683.51723729796,
+              206061.01024509844
+            ],
+            [
+              451682.00218516,
+              206060.63879321562
+            ],
+            [
+              451671.2658004598,
+              206095.78904987185
+            ],
+            [
+              451671.1150282906,
+              206096.35478370648
+            ],
+            [
+              451672.15534939786,
+              206096.5656492893
+            ],
+            [
+              451672.2571167032,
+              206096.0661523085
+            ],
+            [
+              451681.2768543771,
+              206098.43873149634
+            ],
+            [
+              451681.1310483155,
+              206099.19360834622
+            ],
+            [
+              451682.1502035854,
+              206099.44875162927
+            ],
+            [
+              451682.24301885086,
+              206099.14937870245
+            ],
+            [
+              451683.55764129147,
+              206099.54102470685
+            ],
+            [
+              451686.79280867975,
+              206087.67245159135
+            ],
+            [
+              451716.6320427355,
+              206095.0078920115
+            ],
+            [
+              451719.6696073155,
+              206082.89260619384
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 39606975,
+        "name": "Mob 6",
+        "osm_tags": {
+          "alt_name": "Mob Quad Staircase 6",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Mob 6",
+          "operator": "Merton College",
+          "source": "Bing"
+        },
+        "ridge_agl_m": 10.82,
+        "eave_agl_m": 8.32,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.63
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451692.79423064925,
+              206067.2563115633
+            ],
+            [
+              451691.2025707723,
+              206073.69140028482
+            ],
+            [
+              451709.56317851547,
+              206078.0951158628
+            ],
+            [
+              451711.1959377734,
+              206071.69382285431
+            ],
+            [
+              451692.79423064925,
+              206067.2563115633
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 39607373,
+        "name": "Hall",
+        "osm_tags": {
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Hall",
+          "operator": "Merton College",
+          "source": "Bing",
+          "start_date": "1277"
+        },
+        "ridge_agl_m": 16.03,
+        "eave_agl_m": 11.29,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 13.93
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451755.0849572223,
+              206080.34137481725
+            ],
+            [
+              451755.7917468799,
+              206078.06838921242
+            ],
+            [
+              451734.5939066738,
+              206071.62214420357
+            ],
+            [
+              451727.91882292397,
+              206069.5070831597
+            ],
+            [
+              451725.6204409321,
+              206076.85813521186
+            ],
+            [
+              451724.9423031428,
+              206079.03131066234
+            ],
+            [
+              451723.76453419984,
+              206082.80109060433
+            ],
+            [
+              451725.4712688638,
+              206083.3302427758
+            ],
+            [
+              451727.79055839684,
+              206084.0436425811
+            ],
+            [
+              451728.71839943225,
+              206081.08328743605
+            ],
+            [
+              451748.63484721904,
+              206087.26053965418
+            ],
+            [
+              451752.5437369177,
+              206088.47966448276
+            ],
+            [
+              451753.0935238009,
+              206086.70560764923
+            ],
+            [
+              451755.0849572223,
+              206080.34137481725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 95664347,
+        "name": "Front 4",
+        "osm_tags": {
+          "addr:city": "Oxford",
+          "addr:postcode": "OX1 4JD",
+          "alt_name": "Front Quad Staircase 4",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Front 4",
+          "operator": "Merton College",
+          "ref:GB:uprn": "10093788424",
+          "source": "Bing"
+        },
+        "ridge_agl_m": 10.98,
+        "eave_agl_m": 8.48,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.07
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451758.25453699095,
+              206119.99431520898
+            ],
+            [
+              451759.6649046538,
+              206113.06797102513
+            ],
+            [
+              451756.14438025054,
+              206112.35336156574
+            ],
+            [
+              451747.8922603922,
+              206110.53354848595
+            ],
+            [
+              451746.1787425962,
+              206117.4011722915
+            ],
+            [
+              451758.25453699095,
+              206119.99431520898
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 228196820,
+        "name": "Upper and Lower Libraries",
+        "osm_tags": {
+          "alt_name": "Mob Quad Staircase 3 and 4",
+          "amenity": "library",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Upper and Lower Libraries",
+          "operator": "Merton College",
+          "operator:type": "university",
+          "short_name": "Mob 3 and 4"
+        },
+        "ridge_agl_m": 10.88,
+        "eave_agl_m": 6.54,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 12.78
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451696.47449818975,
+              206049.0076523223
+            ],
+            [
+              451697.89224780846,
+              206044.0501542961
+            ],
+            [
+              451719.57392781187,
+              206050.4567072477
+            ],
+            [
+              451721.7393278646,
+              206043.28225938376
+            ],
+            [
+              451692.89268984704,
+              206034.72229726432
+            ],
+            [
+              451689.2807190636,
+              206046.976315515
+            ],
+            [
+              451696.47449818975,
+              206049.0076523223
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498988,
+        "name": "Fellows' 1",
+        "osm_tags": {
+          "alt_name": "Fellows' Quad Staircase 1",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Fellows' 1",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.25,
+        "eave_agl_m": 9.75,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.32
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451762.1321271446,
+              206089.25649477984
+            ],
+            [
+              451769.0706303371,
+              206091.26307279972
+            ],
+            [
+              451776.22617557755,
+              206067.39958367223
+            ],
+            [
+              451769.246907423,
+              206065.32583973405
+            ],
+            [
+              451763.9515630392,
+              206082.83488594793
+            ],
+            [
+              451762.1321271446,
+              206089.25649477984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498989,
+        "name": "Fellows' 2",
+        "osm_tags": {
+          "alt_name": "Fellows' Quad Staircase 2",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Fellows' 2",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.1,
+        "eave_agl_m": 9.6,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.28
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451774.2936606764,
+              206049.17126571666
+            ],
+            [
+              451769.246907423,
+              206065.32583973405
+            ],
+            [
+              451776.22617557755,
+              206067.39958367223
+            ],
+            [
+              451777.7129169133,
+              206062.4539375555
+            ],
+            [
+              451781.2030048513,
+              206051.33328361798
+            ],
+            [
+              451774.2936606764,
+              206049.17126571666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498990,
+        "name": "Fellows' 3",
+        "osm_tags": {
+          "alt_name": "Fellows' Quad Staircase 3",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Fellows' 3",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.15,
+        "eave_agl_m": 9.55,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.63
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451774.2936606764,
+              206049.17126571666
+            ],
+            [
+              451781.2030048513,
+              206051.33328361798
+            ],
+            [
+              451783.45201566006,
+              206044.0929800484
+            ],
+            [
+              451765.3328362838,
+              206038.3567019283
+            ],
+            [
+              451764.2381935783,
+              206038.05627546506
+            ],
+            [
+              451762.023495891,
+              206045.31918519002
+            ],
+            [
+              451774.2936606764,
+              206049.17126571666
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498991,
+        "name": "Fellows' 5",
+        "osm_tags": {
+          "alt_name": "Fellows' Quad Staircase 5",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Fellows' 5",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.18,
+        "eave_agl_m": 9.68,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.86
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451744.640887383,
+              206039.79075098352
+            ],
+            [
+              451738.3238193296,
+              206037.76833181642
+            ],
+            [
+              451733.0147369426,
+              206053.93137424113
+            ],
+            [
+              451739.5591352346,
+              206056.0006097239
+            ],
+            [
+              451744.640887383,
+              206039.79075098352
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498992,
+        "name": "Fitzjames",
+        "osm_tags": {
+          "building": "university",
+          "layer": "1",
+          "learning": "oxford_college",
+          "name": "Fitzjames",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 10.94,
+        "eave_agl_m": 8.44,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.67
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451753.0935238009,
+              206086.70560764923
+            ],
+            [
+              451756.466705958,
+              206087.65228862182
+            ],
+            [
+              451758.45612182777,
+              206088.2177199684
+            ],
+            [
+              451762.1321271446,
+              206089.25649477984
+            ],
+            [
+              451763.9515630392,
+              206082.83488594793
+            ],
+            [
+              451758.91905684926,
+              206081.4485067585
+            ],
+            [
+              451755.0849572223,
+              206080.34137481725
+            ],
+            [
+              451753.0935238009,
+              206086.70560764923
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498993,
+        "name": "Front 1",
+        "osm_tags": {
+          "alt_name": "Front Quad Staircase 1",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Front 1",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 11.81,
+        "eave_agl_m": 9.31,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.32
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451719.32715920446,
+              206103.51129935612
+            ],
+            [
+              451714.8235807305,
+              206102.38621485216
+            ],
+            [
+              451712.1242851114,
+              206101.702296843
+            ],
+            [
+              451710.9183197733,
+              206107.55180793093
+            ],
+            [
+              451717.73878035473,
+              206109.62384453992
+            ],
+            [
+              451719.32715920446,
+              206103.51129935612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498994,
+        "name": "Front 2",
+        "osm_tags": {
+          "alt_name": "Front Quad Staircase 2",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Front 2",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 11.47,
+        "eave_agl_m": 8.97,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.07
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451737.19740049134,
+              206107.92121650424
+            ],
+            [
+              451727.07400576933,
+              206105.45936407516
+            ],
+            [
+              451725.3986776879,
+              206111.97144705488
+            ],
+            [
+              451735.54591036896,
+              206114.80060256593
+            ],
+            [
+              451737.19740049134,
+              206107.92121650424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498995,
+        "name": "Front 3",
+        "osm_tags": {
+          "alt_name": "Front Quad Staircase 3",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Front 3",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 11.44,
+        "eave_agl_m": 8.94,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.08
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451737.19740049134,
+              206107.92121650424
+            ],
+            [
+              451735.54591036896,
+              206114.80060256593
+            ],
+            [
+              451746.1787425962,
+              206117.4011722915
+            ],
+            [
+              451747.8922603922,
+              206110.53354848595
+            ],
+            [
+              451737.19740049134,
+              206107.92121650424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498996,
+        "name": "Front 5",
+        "osm_tags": {
+          "alt_name": "Front Quad Staircase 5",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Front 5",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.29,
+        "eave_agl_m": 8.5,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 11.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451756.14438025054,
+              206112.35336156574
+            ],
+            [
+              451759.6649046538,
+              206113.06797102513
+            ],
+            [
+              451762.16684987146,
+              206113.47181362868
+            ],
+            [
+              451762.43275779375,
+              206112.451216481
+            ],
+            [
+              451762.69010637584,
+              206110.91886950546
+            ],
+            [
+              451763.1846103658,
+              206108.47686145117
+            ],
+            [
+              451765.1901047428,
+              206108.81999875285
+            ],
+            [
+              451769.0706303371,
+              206091.26307279972
+            ],
+            [
+              451762.1321271446,
+              206089.25649477984
+            ],
+            [
+              451758.45612182777,
+              206088.2177199684
+            ],
+            [
+              451757.41285662865,
+              206092.33368746768
+            ],
+            [
+              451759.4859063627,
+              206092.82211525168
+            ],
+            [
+              451756.9591948118,
+              206104.9314940339
+            ],
+            [
+              451756.5309271244,
+              206106.97375067312
+            ],
+            [
+              451757.1785642451,
+              206107.10274566314
+            ],
+            [
+              451756.68326473434,
+              206109.62260771758
+            ],
+            [
+              451756.14438025054,
+              206112.35336156574
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498997,
+        "name": "Kitchens and Savile Room",
+        "osm_tags": {
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Kitchens and Savile Room",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.18,
+        "eave_agl_m": 9.08,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 9.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451733.0147369426,
+              206053.93137424113
+            ],
+            [
+              451729.12701020145,
+              206066.13804701745
+            ],
+            [
+              451727.0075622165,
+              206065.4600640154
+            ],
+            [
+              451725.92317708913,
+              206068.8748617061
+            ],
+            [
+              451727.91882292397,
+              206069.5070831597
+            ],
+            [
+              451734.5939066738,
+              206071.62214420357
+            ],
+            [
+              451739.5591352346,
+              206056.0006097239
+            ],
+            [
+              451733.0147369426,
+              206053.93137424113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498998,
+        "name": "Lodge",
+        "osm_tags": {
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Lodge",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 17.2,
+        "eave_agl_m": 17.2,
+        "height_method": "Gate tower17.2mAGL interpreted from official site isometric; no pitched roof",
+        "roof_width_m": 6.72
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451719.32715920446,
+              206103.51129935612
+            ],
+            [
+              451717.73878035473,
+              206109.62384453992
+            ],
+            [
+              451719.4318142225,
+              206110.14173135732
+            ],
+            [
+              451725.3986776879,
+              206111.97144705488
+            ],
+            [
+              451727.07400576933,
+              206105.45936407516
+            ],
+            [
+              451720.76637559285,
+              206103.87086256855
+            ],
+            [
+              451719.32715920446,
+              206103.51129935612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301498999,
+        "name": "Mob 1",
+        "osm_tags": {
+          "alt_name": "Mob Quad Staircase 1",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Mob 1",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 12.98,
+        "eave_agl_m": 10.48,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.77
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451715.66640332225,
+              206064.59860390628
+            ],
+            [
+              451714.8125647487,
+              206067.74881197163
+            ],
+            [
+              451713.53029436764,
+              206072.28501637606
+            ],
+            [
+              451713.1705514004,
+              206073.70508561825
+            ],
+            [
+              451719.7121310508,
+              206075.37383569335
+            ],
+            [
+              451721.27639351826,
+              206069.59473670204
+            ],
+            [
+              451722.1587602509,
+              206066.3558373099
+            ],
+            [
+              451715.66640332225,
+              206064.59860390628
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499000,
+        "name": "Mob 2",
+        "osm_tags": {
+          "alt_name": "Mob Quad Staircase 2",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Mob 2",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 10.46,
+        "eave_agl_m": 7.96,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 6.73
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451719.57392781187,
+              206050.4567072477
+            ],
+            [
+              451715.66640332225,
+              206064.59860390628
+            ],
+            [
+              451722.1587602509,
+              206066.3558373099
+            ],
+            [
+              451726.0247687794,
+              206052.22464300058
+            ],
+            [
+              451719.57392781187,
+              206050.4567072477
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499001,
+        "name": "Mob 5",
+        "osm_tags": {
+          "alt_name": "Mob Quad Staircase 5",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Mob 5",
+          "operator": "Merton College",
+          "wikidata": "Q6886564",
+          "wikipedia": "en:Mob Quad"
+        },
+        "ridge_agl_m": 10.86,
+        "eave_agl_m": 8.31,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.48
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451696.47449818975,
+              206049.0076523223
+            ],
+            [
+              451689.2807190636,
+              206046.976315515
+            ],
+            [
+              451685.51354870293,
+              206060.22982467816
+            ],
+            [
+              451685.18381717696,
+              206061.41661831603
+            ],
+            [
+              451692.4491145609,
+              206063.20397420356
+            ],
+            [
+              451692.69270653755,
+              206062.3388682893
+            ],
+            [
+              451696.47449818975,
+              206049.0076523223
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499006,
+        "name": "St Alban's 1",
+        "osm_tags": {
+          "alt_name": "St Alban's Quad Staircase 1",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "St Alban's 1",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 14.03,
+        "eave_agl_m": 11.24,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 8.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451759.6649046538,
+              206113.06797102513
+            ],
+            [
+              451758.25453699095,
+              206119.99431520898
+            ],
+            [
+              451770.92683635105,
+              206122.31552843517
+            ],
+            [
+              451772.1779935123,
+              206115.43204677803
+            ],
+            [
+              451764.96277609206,
+              206114.1567497127
+            ],
+            [
+              451765.00516204117,
+              206113.38969131745
+            ],
+            [
+              451764.4107523124,
+              206112.7829483879
+            ],
+            [
+              451762.43275779375,
+              206112.451216481
+            ],
+            [
+              451762.16684987146,
+              206113.47181362868
+            ],
+            [
+              451759.6649046538,
+              206113.06797102513
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499007,
+        "name": "St Alban's 2",
+        "osm_tags": {
+          "alt_name": "St Alban's Quad Staircase 2",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "St Alban's 2",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 14.23,
+        "eave_agl_m": 11.73,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.04
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451772.1779935123,
+              206115.43204677803
+            ],
+            [
+              451770.92683635105,
+              206122.31552843517
+            ],
+            [
+              451775.89517335186,
+              206123.22296936106
+            ],
+            [
+              451784.03401848685,
+              206124.64123548626
+            ],
+            [
+              451785.2374420538,
+              206117.70165158622
+            ],
+            [
+              451772.1779935123,
+              206115.43204677803
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499008,
+        "name": "St Alban's 3",
+        "osm_tags": {
+          "alt_name": "St Alban's Quad Staircase 3",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "St Alban's 3",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 14.67,
+        "eave_agl_m": 12.17,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451785.2374420538,
+              206117.70165158622
+            ],
+            [
+              451784.03401848685,
+              206124.64123548626
+            ],
+            [
+              451794.7357820214,
+              206126.57523034042
+            ],
+            [
+              451795.9885687855,
+              206119.53604749858
+            ],
+            [
+              451788.4149727713,
+              206118.20142350526
+            ],
+            [
+              451785.2374420538,
+              206117.70165158622
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499009,
+        "name": "St Alban's 4",
+        "osm_tags": {
+          "alt_name": "St Alban's Quad Staircase 4",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "St Alban's 4",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 14.04,
+        "eave_agl_m": 11.38,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.82
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451788.4149727713,
+              206118.20142350526
+            ],
+            [
+              451795.9885687855,
+              206119.53604749858
+            ],
+            [
+              451796.3514730092,
+              206117.1371842909
+            ],
+            [
+              451797.89471001027,
+              206109.37798176665
+            ],
+            [
+              451790.2116765697,
+              206107.94212444616
+            ],
+            [
+              451788.8184931793,
+              206115.8808381874
+            ],
+            [
+              451788.4149727713,
+              206118.20142350526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499010,
+        "name": "St Alban's 5",
+        "osm_tags": {
+          "alt_name": "St Alban's Quad Staircase 5",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "St Alban's 5",
+          "operator": "Merton College"
+        },
+        "ridge_agl_m": 13.75,
+        "eave_agl_m": 11.09,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.82
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451790.2116765697,
+              206107.94212444616
+            ],
+            [
+              451797.89471001027,
+              206109.37798176665
+            ],
+            [
+              451800.0485764107,
+              206097.95442693896
+            ],
+            [
+              451792.35862290114,
+              206096.5184956317
+            ],
+            [
+              451792.25627303176,
+              206097.07359984895
+            ],
+            [
+              451790.2116765697,
+              206107.94212444616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "way",
+        "osm_id": 301499011,
+        "name": "Fellows' 4",
+        "osm_tags": {
+          "addr:city": "Oxford",
+          "addr:postcode": "OX1 4JD",
+          "alt_name": "Fellows' Quad Staircase 4",
+          "building": "university",
+          "learning": "oxford_college",
+          "name": "Fellows' 4",
+          "operator": "Merton College",
+          "ref:GB:uprn": "10093788422;10093788421;10024244019"
+        },
+        "ridge_agl_m": 12.17,
+        "eave_agl_m": 9.55,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 7.71
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451764.2381935783,
+              206038.05627546506
+            ],
+            [
+              451740.68425111036,
+              206030.42904455215
+            ],
+            [
+              451738.3238193296,
+              206037.76833181642
+            ],
+            [
+              451744.640887383,
+              206039.79075098352
+            ],
+            [
+              451762.023495891,
+              206045.31918519002
+            ],
+            [
+              451764.2381935783,
+              206038.05627546506
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "relation",
+        "osm_id": 16471253,
+        "name": "Grove II",
+        "osm_tags": {
+          "building": "university",
+          "name": "Grove II",
+          "operator": "Merton College",
+          "source": "Bing",
+          "type": "multipolygon"
+        },
+        "ridge_agl_m": 13.04,
+        "eave_agl_m": 8.39,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 13.68
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451681.05897877435,
+              206019.25126296608
+            ],
+            [
+              451679.2149330953,
+              206026.06195568806
+            ],
+            [
+              451673.9957333378,
+              206024.69599748787
+            ],
+            [
+              451672.30789613846,
+              206031.08561462257
+            ],
+            [
+              451686.8222705263,
+              206034.90483981313
+            ],
+            [
+              451688.4092661027,
+              206028.925748675
+            ],
+            [
+              451690.2849225791,
+              206021.72607487236
+            ],
+            [
+              451681.05897877435,
+              206019.25126296608
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "relation",
+        "osm_id": 16471254,
+        "name": "Grove I",
+        "osm_tags": {
+          "building": "university",
+          "name": "Grove I",
+          "operator": "Merton College",
+          "type": "multipolygon"
+        },
+        "ridge_agl_m": 13.06,
+        "eave_agl_m": 8.62,
+        "height_method": "90th percentile EA 2020 DSM minus common59m datum; eaves inferred from 34-degree nominal pitch",
+        "roof_width_m": 13.05
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              451681.05897877435,
+              206019.25126296608
+            ],
+            [
+              451690.2849225791,
+              206021.72607487236
+            ],
+            [
+              451692.0147743635,
+              206015.28127828066
+            ],
+            [
+              451693.64513746067,
+              206009.11354047188
+            ],
+            [
+              451679.10986948607,
+              206005.30520608876
+            ],
+            [
+              451677.55128831894,
+              206011.20672920247
+            ],
+            [
+              451682.7772905993,
+              206012.58388357615
+            ],
+            [
+              451681.05897877435,
+              206019.25126296608
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

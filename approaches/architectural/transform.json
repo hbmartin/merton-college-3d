@@ -1,0 +1,28 @@
+{
+  "crs": "EPSG:27700",
+  "bbox_bng": [
+    451665.0,
+    206000.0,
+    451806.0,
+    206133.0
+  ],
+  "scale_mm_per_m": 1.5602836879432624,
+  "z_base_mm": 3.0,
+  "ground_reference_mOD": 59.0,
+  "x_mm": "(E-451665)*220/141",
+  "y_mm": "(N-206000)*220/141",
+  "z_mm": "3 + AGL_m*220/141",
+  "tower_center_bng": [
+    451681.6,
+    206079.1
+  ],
+  "tower_center_mm": [
+    25.900709219821827,
+    123.41843971632115
+  ],
+  "tower_body_width_m": 10.8,
+  "tower_rotation_deg": 13.88,
+  "tower_top_agl_m": 34.86,
+  "tower_body_top_agl_m": 29.35,
+  "tower_component_coordinates": "Full shared model mm frame; bottom2.844mm to overlap3mm base"
+}

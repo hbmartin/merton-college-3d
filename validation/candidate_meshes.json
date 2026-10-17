@@ -1,0 +1,70 @@
+[
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-lidar.stl",
+    "sha256": "23431ee0029d37d4c98651683047f9360f420ab6b4ec702b7cd72cb53f0a11cf",
+    "vertices": 19577,
+    "triangles": 39150,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        58.789898
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      58.7899
+    ],
+    "volume_mm3": 575641.491,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-architectural.stl",
+    "sha256": "450bc500cda1148c1071be065e22b5bd46848d11139d5b28e09dfc1dc0ceaaca",
+    "vertices": 2117,
+    "triangles": 4262,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        57.391491
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      57.3915
+    ],
+    "volume_mm3": 334336.045,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "model": "lidar",
+    "file": "deliverables/merton-lidar-a1.3mf",
+    "sha256": "d31424d10b69acaef09a487acb0f38e09b71fa318f697a4c94291226bc1fe8ab",
+    "a1_04_slice_pass": true,
+    "time_seconds": 46915.32421875,
+    "pla_grams": 242.912353515625
+  },
+  {
+    "model": "architectural",
+    "file": "deliverables/merton-architectural-a1.3mf",
+    "sha256": "9a4b57dbeb64be53c2d9ebd408a1fc66c92d992279871198503d4c19ad0f163d",
+    "a1_04_slice_pass": true,
+    "time_seconds": 27833.71484375,
+    "pla_grams": 197.7766876220703
+  },
+  {
+    "model": "hybrid",
+    "file": "deliverables/merton-hybrid-a1.3mf",
+    "sha256": "7f4ca03413fd99e8dbc1208cd66fd71da7f42f3cfed154f024022f312f75b155",
+    "a1_04_slice_pass": true,
+    "time_seconds": 30176.6796875,
+    "pla_grams": 190.73291015625
+  },
+  {
+    "model": "samples",
+    "file": "deliverables/merton-chapel-comparison-a1.3mf",
+    "sha256": "dcfb0c3c8b0d8825d5aa543cb2100c336ce995ebd576ad2b12b3413320501873",
+    "a1_04_slice_pass": true,
+    "time_seconds": 18257.26953125,
+    "pla_grams": 84.4621353149414
+  }
+]

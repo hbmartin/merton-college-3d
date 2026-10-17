@@ -1,0 +1,31 @@
+{
+  "dimensions_mm": [
+    220.0,
+    207.51773071289062,
+    57.3914909362793
+  ],
+  "bounds_mm": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      220.0,
+      207.51773071289062,
+      57.3914909362793
+    ]
+  ],
+  "watertight": true,
+  "winding_consistent": true,
+  "signed_volume_mm3": 334762.72593092517,
+  "body_count": 1,
+  "vertices": 2166,
+  "triangles": 4352,
+  "minimum_pinnacle_cap_mm": 0.8269503546099292,
+  "footprints": 27,
+  "scale_ratio": 640.9090909090909,
+  "pruned_numerical_shells": 12,
+  "pruned_shell_volume_mm3": 0.0001819702864489514,
+  "print_note": "Flat base down, standard0.4mm nozzle, 0.12\u20130.16mm layers. Review in BambuStudio. No physical print performed."
+}

@@ -1,0 +1,167 @@
+{
+  "approach": "EA measured 1m roof surface clipped continuously to selected OSM building footprints; modeled chapel tower; flat base",
+  "crop_bbox_bng_m": [
+    451665.0,
+    206000.0,
+    451806.0,
+    206133.0
+  ],
+  "crs": "EPSG:27700",
+  "axes": "X=east, Y=north, Z=up; origin=SW crop; bottom Z=0 mm",
+  "scale_mm_per_m": 1.5602836879432624,
+  "nominal_scale_denominator": 640.9090909090909,
+  "base_mm": 3.0,
+  "height_exaggeration": 1,
+  "estimated_flat_ground_elevation_m_od": 59.0,
+  "ground_datum_method": "Common estimated 59 m OD flat-ground datum agreed with architectural approach; no DTM or local terrain variation modeled",
+  "raw_lidar_crop_min_elevation_m_od": 56.010501861572266,
+  "datum_difference_from_raw_relief_mm": 4.664465180525543,
+  "source_survey_date": "2020-03-15",
+  "source_resolution_m": 1,
+  "selected_osm_building_count": 27,
+  "selected_building_area_m2": 4087.2897933202094,
+  "roof_mask_area_m2": 3976.270690349967,
+  "footprint_precision_expansion_m": 0.01,
+  "tower": {
+    "source_file": "approaches/architectural/chapel_tower_component.stl",
+    "center_bng_m": [
+      451681.6,
+      206079.1
+    ],
+    "body_width_m": 10.8,
+    "rotation_deg": 13.88,
+    "method": "Same reusable architectural tower as the architectural candidate; see its metadata for reconstructed details"
+  },
+  "tower_transition": {
+    "width_m": 14.8,
+    "orientation_deg": 13.88,
+    "cap_elevation_m_od": 78.8,
+    "adjusted_grid_vertices": 137,
+    "method": "Cap only measured samples above the adjacent chapel ridge within the 14.8 m tower transition square to remove scan spread beyond the replacement tower"
+  },
+  "filled_sealed_internal_cavities": 2,
+  "filled_internal_cavity_volume_mm3": 12.300126388728994,
+  "processing": [
+    "Use the same 1 m-spaced source roof triangles as the measured LiDAR candidate.",
+    "Expand the union of 27 selected mapped building polygons by 0.01 m to resolve point-touch junctions, then clip each roof triangle to that boundary.",
+    "Within the documented 14.8 m tower transition square, cap source samples at 78.8 m OD to remove tower scan spread; all other source roof triangle planes are preserved.",
+    "Subtract the modeled tower body footprint with 0.05 m overlap; union reusable architectural tower.",
+    "Subtract common estimated 59 m OD ground and add 3 mm base; clamp measured values below the flat datum to the base top.",
+    "Extrude exact footprint boundary walls vertically into the base; union solids with manifold3d.",
+    "Fill any enclosed internal cavities sealed at the roof/tower union; exterior surfaces remain unchanged.",
+    "Merge clipping vertices to 0.000001 mm precision to remove numerical seams."
+  ],
+  "inputs": {
+    "approaches/lidar/raw_dsm_grid.npz": "9ff602e49bcb3925ef52fbdfce13da489eef4ae5d6eb548a987b248bcaff9f14",
+    "approaches/architectural/building_footprints.geojson": "4ea44b7396d977350b0c4f7d28ddc4c43ca816b641c23b76831fe409ed2fa3cd",
+    "approaches/architectural/chapel_tower_component.stl": "bf059404a17cfbc846f6fb8ba8a8b20bfdcf04afeb71b9ed1bc07a2a21cfb4a3"
+  },
+  "licenses": [
+    {
+      "dataset": "Environment Agency DSM",
+      "license": "Open Government Licence v3.0",
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+      "source_url": "https://environment.data.gov.uk/dataset/9ba4d5ac-d596-445a-9056-dae3ddec0178"
+    },
+    {
+      "dataset": "Selected OpenStreetMap building footprints",
+      "license": "ODbL 1.0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "attribution": "\u00a9 OpenStreetMap contributors"
+    }
+  ],
+  "limitations": [
+    "DSM is 2.5D: roofs are measured, but fa\u00e7ade detail and overhangs are absent.",
+    "Mask removes vegetation and neighbors outside selected footprints; canopy or sensor artifacts over a roof remain.",
+    "Roof edge falloff and 1 m sampling artifacts remain inside footprints; no general roof smoothing. The tower transition locally caps heights as documented.",
+    "Tower is a simplified architectural reconstruction, not a survey mesh.",
+    "Estimated flat 59 m OD ground differs from the raw-relief minimum datum; this changes apparent building heights.",
+    "Selected historic-core buildings omit unmodeled site walls, gardens, trees and remote college properties."
+  ],
+  "roof_solid_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "connected_components": 3,
+    "euler_number": 4,
+    "vertices": 12974,
+    "triangles": 25940,
+    "degenerate_triangles": 0,
+    "dimensions_mm": [
+      201.21048589283976,
+      189.25281715665798,
+      31.63624951518174
+    ],
+    "bounds_mm": [
+      [
+        9.521833639953487,
+        8.258586313511175,
+        2.5
+      ],
+      [
+        210.73231953279324,
+        197.51140347016917,
+        34.13624951518174
+      ]
+    ],
+    "volume_mm3": 167113.34565774762
+  },
+  "mesh_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "connected_components": 1,
+    "euler_number": -8,
+    "vertices": 8013,
+    "triangles": 16042,
+    "degenerate_triangles": 0,
+    "dimensions_mm": [
+      220.0,
+      207.51773071289062,
+      57.3914909362793
+    ],
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.51773071289062,
+        57.3914909362793
+      ]
+    ],
+    "volume_mm3": 312368.2297162682
+  },
+  "exported_stl_reload_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "connected_components": 1,
+    "euler_number": -8,
+    "vertices": 8013,
+    "triangles": 16042,
+    "degenerate_triangles": 0,
+    "dimensions_mm": [
+      220.0,
+      207.51773071289062,
+      57.3914909362793
+    ],
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.51773071289062,
+        57.3914909362793
+      ]
+    ],
+    "volume_mm3": 312368.2297162682
+  },
+  "stl_sha256": "f265f8fb8833e3af38294a995c84fc47089f36e7f4c7a87e6b97faa044d6fad1"
+}

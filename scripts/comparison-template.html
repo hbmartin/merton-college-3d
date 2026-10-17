@@ -1,0 +1,160 @@
+<div id="merton-model-comparison">
+  <div class="viz-controls">
+    <label class="form-label">Model
+      <select class="form-select" data-model aria-label="Model to inspect"></select>
+    </label>
+    <label class="form-label">View
+      <select class="form-select" data-view aria-label="Camera angle">
+        <option value="oblique">Three-quarter</option>
+        <option value="overhead">Overhead · north up</option>
+      </select>
+    </label>
+  </div>
+  <div data-viewport role="img" aria-label="Rotatable 3D model of Merton College. Drag to rotate; use the wheel to zoom.">
+    <div data-loading class="text-small">Loading model…</div>
+  </div>
+  <div class="viz-row text-small" aria-live="polite">
+    <span data-dimensions class="tabular-nums"></span>
+    <span data-detail></span>
+  </div>
+  <div class="text-small text-muted">Drag to rotate · scroll to zoom · all three use the same scale and crop</div>
+  <style>
+    #merton-model-comparison [data-viewport] { width:100%; height:490px; position:relative; touch-action:none; }
+    #merton-model-comparison canvas { display:block; width:100%; height:100%; }
+    #merton-model-comparison [data-loading] { position:absolute; left:0; top:45%; width:100%; text-align:center; }
+    #merton-model-comparison [data-detail] { color:var(--muted-foreground); }
+    @media(max-width:500px) { #merton-model-comparison [data-viewport] { height:370px; } }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script>
+  (() => {
+    const root = document.getElementById('merton-model-comparison');
+    const models = __MERTON_DATA__;
+    const viewport = root.querySelector('[data-viewport]');
+    const modelSelect = root.querySelector('[data-model]');
+    const viewSelect = root.querySelector('[data-view]');
+    const loading = root.querySelector('[data-loading]');
+    if (!window.THREE) { loading.textContent = '3D preview unavailable. Open the supplied 3MF files in Bambu Studio.'; return; }
+    for (const model of models) {
+      const option = document.createElement('option');
+      option.value = model.id; option.textContent = model.name;
+      modelSelect.appendChild(option);
+    }
+    let selected = models.find(m => m.id === 'hybrid')?.id || models[0].id;
+    let yaw = -115 * Math.PI/180, pitch = 42 * Math.PI/180, zoom = 1;
+    let view = 'oblique';
+    function restore(state) {
+      if (!state) return;
+      const saved = state.modelContent || {};
+      const cameraState = state.privateContent || {};
+      if (models.some(m => m.id === saved.model)) selected = saved.model;
+      if (Number.isFinite(cameraState.yaw)) yaw = cameraState.yaw;
+      if (Number.isFinite(cameraState.pitch)) pitch = Math.max(.12, Math.min(1.569, cameraState.pitch));
+      if (Number.isFinite(cameraState.zoom)) zoom = Math.max(.5, Math.min(2.4, cameraState.zoom));
+      if (cameraState.view === 'overhead') view = 'overhead';
+    }
+    restore(window.openai?.widgetState);
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-200,200,150,-150,1,3000);
+    camera.up.set(0,0,1);
+    const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    viewport.appendChild(renderer.domElement);
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    scene.add(new THREE.AmbientLight(0xffffff, .32));
+    const key = new THREE.DirectionalLight(0xffffff, .88);
+    key.position.set(-110,-100,450);
+    key.target.position.set(110,104,0);
+    key.castShadow = true;
+    key.shadow.mapSize.set(2048,2048);
+    key.shadow.camera.left = key.shadow.camera.bottom = -230;
+    key.shadow.camera.right = key.shadow.camera.top = 230;
+    key.shadow.camera.near = 1; key.shadow.camera.far = 1000;
+    key.shadow.bias = -.0001; key.shadow.normalBias = .08;
+    scene.add(key); scene.add(key.target);
+    const fill = new THREE.DirectionalLight(0xffffff, .12);
+    fill.position.set(220,180,130); scene.add(fill);
+    const group = new THREE.Group(); scene.add(group);
+    const material = new THREE.MeshStandardMaterial({roughness:.95, metalness:0, flatShading:true});
+    const probe = document.createElement('span'); probe.hidden = true; root.appendChild(probe);
+    const colorCanvas = document.createElement('canvas'); colorCanvas.width=colorCanvas.height=1;
+    const colorContext = colorCanvas.getContext('2d', {willReadFrequently:true});
+    function themeColor(variable) {
+      probe.style.color = `var(${variable})`;
+      colorContext.clearRect(0,0,1,1);
+      colorContext.fillStyle = getComputedStyle(probe).color;
+      colorContext.fillRect(0,0,1,1);
+      const rgb = colorContext.getImageData(0,0,1,1).data;
+      return new THREE.Color(rgb[0]/255,rgb[1]/255,rgb[2]/255).convertSRGBToLinear();
+    }
+    function applyTheme() {
+      material.color.copy(themeColor('--foreground')).lerp(themeColor('--background'),.5);
+      renderer.render(scene,camera);
+    }
+    function decodeArray(data, Type) {
+      const raw = atob(data), bytes = new Uint8Array(raw.length);
+      for (let i=0;i<raw.length;i++) bytes[i]=raw.charCodeAt(i);
+      return new Type(bytes.buffer);
+    }
+    const geometries = new Map();
+    for (const model of models) {
+      const compact = decodeArray(model.vertices, Int16Array);
+      const vertices = new Float32Array(compact.length);
+      for (let i=0;i<compact.length;i++) vertices[i] = compact[i]/100;
+      const faces = decodeArray(model.faces, Uint16Array);
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute('position',new THREE.BufferAttribute(vertices,3));
+      geometry.setIndex(new THREE.BufferAttribute(faces,1));
+      geometry.computeVertexNormals();
+      geometries.set(model.id,geometry);
+    }
+    let mesh;
+    function updateModel() {
+      if(mesh) group.remove(mesh);
+      const model = models.find(m=>m.id===selected);
+      mesh = new THREE.Mesh(geometries.get(selected),material);
+      mesh.castShadow = true; mesh.receiveShadow = true; group.add(mesh);
+      modelSelect.value=selected;
+      root.querySelector('[data-dimensions]').textContent=model.dimensions.map(x=>x.toFixed(1)).join(' × ')+' mm';
+      root.querySelector('[data-detail]').textContent=model.detail;
+      renderer.render(scene,camera);
+    }
+    function updateCamera() {
+      const width = Math.max(viewport.clientWidth, 1), height=Math.max(viewport.clientHeight, 1);
+      const aspect=width/height, span=172 * zoom / Math.min(aspect,1.3);
+      camera.left=-span*aspect; camera.right=span*aspect; camera.top=span; camera.bottom=-span;
+      camera.updateProjectionMatrix();
+      const angle = view === 'overhead' ? Math.PI/2-.001 : pitch;
+      const cameraYaw = view === 'overhead' ? -Math.PI/2 : yaw;
+      const target = new THREE.Vector3(110,103.7589,17);
+      camera.position.set(target.x+800*Math.cos(angle)*Math.cos(cameraYaw),target.y+800*Math.cos(angle)*Math.sin(cameraYaw),target.z+800*Math.sin(angle));
+      camera.lookAt(target); renderer.setSize(width,height,false); renderer.render(scene,camera);
+    }
+    function saveState() {
+      if(window.openai?.setWidgetState) window.openai.setWidgetState({modelContent:{model:selected,modelName:models.find(m=>m.id===selected).name},privateContent:{yaw,pitch,zoom,view}}).catch(()=>{});
+    }
+    modelSelect.addEventListener('change',()=>{selected=modelSelect.value;updateModel();saveState();});
+    viewSelect.value=view;
+    viewSelect.addEventListener('change',()=>{view=viewSelect.value;updateCamera();saveState();});
+    let dragging=false, lastX=0,lastY=0;
+    renderer.domElement.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;lastY=e.clientY;renderer.domElement.setPointerCapture(e.pointerId);});
+    renderer.domElement.addEventListener('pointermove',e=>{
+      if(!dragging)return;
+      yaw-=(e.clientX-lastX)*.008;
+      pitch=Math.max(.12,Math.min(1.569,pitch+(e.clientY-lastY)*.008));
+      lastX=e.clientX;lastY=e.clientY;view='oblique';viewSelect.value=view;updateCamera();
+    });
+    renderer.domElement.addEventListener('pointerup',()=>{dragging=false;saveState();});
+    renderer.domElement.addEventListener('pointercancel',()=>{dragging=false;});
+    renderer.domElement.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.5,Math.min(2.4,zoom*Math.exp(e.deltaY*.001)));updateCamera();saveState();},{passive:false});
+    new ResizeObserver(updateCamera).observe(viewport);
+    new MutationObserver(applyTheme).observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+    window.addEventListener('openai:set_globals',event=>{
+      restore(event.detail?.globals?.widgetState);viewSelect.value=view;updateModel();updateCamera();applyTheme();
+    });
+    loading.remove();updateModel();updateCamera();applyTheme();
+  })();
+  </script>
+</div>

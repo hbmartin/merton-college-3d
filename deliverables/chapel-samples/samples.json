@@ -1,0 +1,56 @@
+[
+  {
+    "model": "lidar",
+    "file": "deliverables/chapel-samples/lidar-chapel.stl",
+    "bbox_bng_m": [
+      451668,
+      206060,
+      451703,
+      206100
+    ],
+    "dimensions_mm": [
+      54.609928131103516,
+      62.411346435546875,
+      58.78989791870117
+    ],
+    "watertight": true,
+    "scale_denominator": 640.9090909090909,
+    "scale_change": 1.0
+  },
+  {
+    "model": "architectural",
+    "file": "deliverables/chapel-samples/architectural-chapel.stl",
+    "bbox_bng_m": [
+      451668,
+      206060,
+      451703,
+      206100
+    ],
+    "dimensions_mm": [
+      54.609928131103516,
+      62.411346435546875,
+      57.3914909362793
+    ],
+    "watertight": true,
+    "scale_denominator": 640.9090909090909,
+    "scale_change": 1.0
+  },
+  {
+    "model": "hybrid",
+    "file": "deliverables/chapel-samples/hybrid-chapel.stl",
+    "bbox_bng_m": [
+      451668,
+      206060,
+      451703,
+      206100
+    ],
+    "dimensions_mm": [
+      54.609928131103516,
+      62.411346435546875,
+      57.3914909362793
+    ],
+    "watertight": true,
+    "scale_denominator": 640.9090909090909,
+    "scale_change": 1.0
+  }
+]

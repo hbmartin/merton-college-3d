@@ -1,0 +1,206 @@
+[
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-lidar.stl",
+    "sha256": "23431ee0029d37d4c98651683047f9360f420ab6b4ec702b7cd72cb53f0a11cf",
+    "vertices": 19577,
+    "triangles": 39150,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        58.789898
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      58.7899
+    ],
+    "volume_mm3": 575641.491,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-architectural.stl",
+    "sha256": "1e2e7e8e2c8784f90dd81367335a99a3b2fa7c1bda3800934cd40ca9a674d491",
+    "vertices": 2166,
+    "triangles": 4352,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        57.391491
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      57.3915
+    ],
+    "volume_mm3": 334762.726,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-hybrid.stl",
+    "sha256": "f265f8fb8833e3af38294a995c84fc47089f36e7f4c7a87e6b97faa044d6fad1",
+    "vertices": 8013,
+    "triangles": 16042,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        57.391491
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      57.3915
+    ],
+    "volume_mm3": 312368.23,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/chapel-samples/architectural-chapel.stl",
+    "sha256": "06d974a1951798818da570cc5847946731067faa465ae45f99c62417b87d670c",
+    "vertices": 1408,
+    "triangles": 2836,
+    "bounds_mm": [
+      [
+        -0.0,
+        -2e-06,
+        0.0
+      ],
+      [
+        54.609928,
+        62.411346,
+        57.391491
+      ]
+    ],
+    "dimensions_mm": [
+      54.6099,
+      62.4113,
+      57.3915
+    ],
+    "volume_mm3": 60827.048,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/chapel-samples/hybrid-chapel.stl",
+    "sha256": "8417411ffad86e28287fbcdb5d1e2185bc9c8813cde19b7047ba23eaf75dff6c",
+    "vertices": 2305,
+    "triangles": 4626,
+    "bounds_mm": [
+      [
+        -0.0,
+        -2e-06,
+        0.0
+      ],
+      [
+        54.609928,
+        62.411346,
+        57.391491
+      ]
+    ],
+    "dimensions_mm": [
+      54.6099,
+      62.4113,
+      57.3915
+    ],
+    "volume_mm3": 52920.259,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/chapel-samples/lidar-chapel.stl",
+    "sha256": "80905cc46bbda54cfe2932f9b4c9f4ce60d8d6b1301a33ea40f83c244bda7e34",
+    "vertices": 1481,
+    "triangles": 2958,
+    "bounds_mm": [
+      [
+        -0.0,
+        -2e-06,
+        0.0
+      ],
+      [
+        54.609928,
+        62.411346,
+        58.789898
+      ]
+    ],
+    "dimensions_mm": [
+      54.6099,
+      62.4113,
+      58.7899
+    ],
+    "volume_mm3": 75712.391,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  }
+]

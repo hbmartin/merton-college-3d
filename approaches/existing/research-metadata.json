@@ -1,0 +1,40 @@
+{
+  "checked": "2026-10-17",
+  "makerworld": {
+    "url": "https://makerworld.com/en/models/2574076-dream-university-prestigious-university-map-oxford#profileId-2838133",
+    "model_id": 2574076,
+    "profile_id": 2838133,
+    "creator": "user_347560554",
+    "downloaded_mesh": false,
+    "blocker": "Log in to download models",
+    "license": "Standard Digital File License",
+    "description": "Dream University Map Model of Oxford University, 0.4 nozzle",
+    "listing_profile": {
+      "layer_mm": 0.2,
+      "walls": 2,
+      "infill_percent": 15,
+      "plates": 3,
+      "hours": 15.7,
+      "a1_validated": false
+    },
+    "merton_coverage": "Inferred geographically from public photograph; mesh not inspected"
+  },
+  "micropolitan": {
+    "url": "https://thangs.com/m/1254135",
+    "title": "Oxford, UK - S, M, L, & XL",
+    "downloaded_mesh": false,
+    "blocker": "Become a member to download",
+    "merton_coverage": "Inferred geographically from larger-area preview; mesh not inspected"
+  },
+  "google_tiles": {
+    "downloaded_mesh": false,
+    "blocker": "Standard terms restrict extraction, derivatives and offline use; API key does not grant STL permission",
+    "policies": "https://developers.google.com/maps/documentation/tile/policies",
+    "terms": "https://cloud.google.com/maps-platform/terms",
+    "sections": [
+      "3.2.3(a)",
+      "3.2.3(b)",
+      "3.2.3(c)"
+    ]
+  }
+}

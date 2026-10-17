@@ -1,0 +1,122 @@
+{
+  "approach": "EA 1m last-return LiDAR DSM heightfield, bilinearly registered to shared crop bounds",
+  "source_dataset": "LIDAR Composite Digital Surface Model (DSM) - 1m (2022 composite)",
+  "dataset_url": "https://environment.data.gov.uk/dataset/9ba4d5ac-d596-445a-9056-dae3ddec0178",
+  "numeric_service": "https://environment.data.gov.uk/spatialdata/lidar-composite-digital-surface-model-last-return-dsm-1m/wcs",
+  "coverage_id": "9ba4d5ac-d596-445a-9056-dae3ddec0178__Lidar_Composite_Elevation_LZ_DSM_1m",
+  "source_survey_date": "2020-03-15",
+  "source_survey_evidence": "raw/coverage-index.geojson",
+  "source_resolution_m": 1,
+  "mesh_vertex_spacing_m": 1,
+  "grid_export": "raw_dsm_grid.npz",
+  "crs": "EPSG:27700",
+  "vertical_datum": "Ordnance Datum Newlyn (source dataset OSTN15/OSGM15)",
+  "os_5km_tile": "SP50NE",
+  "context_bbox_bng_m": [
+    451450,
+    205750,
+    451950,
+    206150
+  ],
+  "requested_crop_bbox_bng_m": [
+    451665,
+    206000,
+    451806,
+    206133
+  ],
+  "mesh_sample_bbox_bng_m": [
+    451665,
+    206000,
+    451806,
+    206133
+  ],
+  "crop_bbox_wgs84_lonlat": [
+    [
+      -1.2529952478703776,
+      51.75032049870326
+    ],
+    [
+      -1.250933173107489,
+      51.751503216915005
+    ]
+  ],
+  "source_height_range_m": [
+    56.010501861572266,
+    91.76675415039062
+  ],
+  "horizontal_and_vertical_scale_mm_per_m": 1.5602836879432624,
+  "nominal_scale_denominator": 640.9090909090909,
+  "height_exaggeration": 1,
+  "minimum_base_mm": 3,
+  "axes": "X=east, Y=north, Z=up; origin=SW shared crop boundary vertex; bottom Z=0 mm",
+  "processing": "Sample official raster bilinearly at 1m-spaced BNG vertices on exact shared crop bounds; triangulate those heights; no further smoothing, roof invention, or vegetation removal; subtract sampled crop minimum elevation and add 3mm minimum base; close vertical sides and planar bottom.",
+  "license": "Open Government Licence v3.0",
+  "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "attribution": "\u00a9 Environment Agency copyright and/or database right 2022. All rights reserved.",
+  "retrieved_date": "2026-10-17",
+  "source_sha256": "ad4dfde38724642db971b3e8b49960d44566383144842bb22fdce43c036529a7",
+  "stl_sha256": "23431ee0029d37d4c98651683047f9360f420ab6b4ec702b7cd72cb53f0a11cf",
+  "mesh_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "connected_components": 1,
+    "euler_number": 2,
+    "vertices": 19577,
+    "triangles": 39150,
+    "degenerate_triangles": 0,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.5177304964539,
+        58.78989791870117
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177304964539,
+      58.78989791870117
+    ],
+    "volume_mm3": 575641.4913620566
+  },
+  "exported_stl_reload_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "connected_components": 1,
+    "euler_number": 2,
+    "vertices": 19577,
+    "triangles": 39150,
+    "degenerate_triangles": 0,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.51773071289062,
+        58.78989791870117
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.51773071289062,
+      58.78989791870117
+    ],
+    "volume_mm3": 575641.4905317748
+  },
+  "limitations": [
+    "DSM is 2.5D: no vertical fa\u00e7ade windows, undercuts or overhangs.",
+    "Source 1m cells map to 1.56mm on this print; fine tower tracery is absent.",
+    "Vegetation, vehicles and survey artifacts remain in the surface.",
+    "Some adjacent buildings may fall within the rectangular crop.",
+    "Source reflects the 2020 survey, not a current survey."
+  ]
+}

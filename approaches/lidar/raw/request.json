@@ -1,0 +1,36 @@
+{
+  "url": "https://environment.data.gov.uk/spatialdata/lidar-composite-digital-surface-model-last-return-dsm-1m/wcs",
+  "params": [
+    [
+      "service",
+      "WCS"
+    ],
+    [
+      "version",
+      "2.0.1"
+    ],
+    [
+      "request",
+      "GetCoverage"
+    ],
+    [
+      "coverageId",
+      "9ba4d5ac-d596-445a-9056-dae3ddec0178__Lidar_Composite_Elevation_LZ_DSM_1m"
+    ],
+    [
+      "format",
+      "image/tiff"
+    ],
+    [
+      "subset",
+      "E(451450,451950)"
+    ],
+    [
+      "subset",
+      "N(205750,206150)"
+    ]
+  ],
+  "resolved_url": "https://environment.data.gov.uk/spatialdata/lidar-composite-digital-surface-model-last-return-dsm-1m/wcs?service=WCS&version=2.0.1&request=GetCoverage&coverageId=9ba4d5ac-d596-445a-9056-dae3ddec0178__Lidar_Composite_Elevation_LZ_DSM_1m&format=image%2Ftiff&subset=E%28451450%2C451950%29&subset=N%28205750%2C206150%29",
+  "status": 200,
+  "content_type": "image/tiff"
+}

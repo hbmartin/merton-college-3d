@@ -1,0 +1,64 @@
+{
+    "error_string": "Success.",
+    "export_time": 3131,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 16,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 1064.453857421875,
+                "Bridge": 2001.72900390625,
+                "Custom": 385.6458435058594,
+                "Flush": 25.0,
+                "Gap infill": 403.7140808105469,
+                "Inner wall": 9940.3154296875,
+                "Internal solid infill": 9064.6513671875,
+                "Outer wall": 7344.3232421875,
+                "Sparse infill": 10777.6708984375,
+                "Top surface": 1532.5350341796875,
+                "Travel": 4359.21875,
+                "Undefined": 4342.69189453125
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 242.912353515625,
+                    "total_used_g": 242.912353515625
+                }
+            ],
+            "generate_support_material_time": 232,
+            "id": 1,
+            "infill_time": 5884,
+            "layer_filament_change": 0,
+            "main_predication": 46496.20703125,
+            "make_perimeters_time": 918,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 207.51773071289063,
+                        "height": 58.78989791870117,
+                        "width": 220.0,
+                        "x": 17.999990463256836,
+                        "y": 24.241140365600586,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "merton-lidar.stl",
+                    "triangle_count": 39150
+                }
+            ],
+            "sliced_time": 10433,
+            "sliced_time_with_cache": 3114,
+            "total_predication": 46915.32421875,
+            "triangle_count": 39150,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 12.0,
+    "wall_loops": 3
+}
