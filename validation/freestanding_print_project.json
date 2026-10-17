@@ -1,0 +1,251 @@
+{
+  "project": "deliverables/merton-detailed-freestanding-a1.3mf",
+  "sliced_plate": "deliverables/merton-detailed-freestanding-a1.gcode.3mf",
+  "prepared_in": "Bambu Studio 2.8.2.61 GUI",
+  "settings": {
+    "printer_model": "Bambu Lab A1",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "filament_type": [
+      "PLA"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "wall_generator": "arachne",
+    "support_type": "tree(manual)",
+    "support_on_build_plate_only": "1",
+    "support_object_xy_distance": "0.5",
+    "support_top_z_distance": "0.24",
+    "sparse_infill_density": "12%",
+    "sparse_infill_pattern": "gyroid",
+    "wall_loops": "3",
+    "layer_height": "0.12",
+    "raft_layers": "0",
+    "brim_type": "outer_only",
+    "brim_width": "3"
+  },
+  "gui_total_estimate": "12h 37m",
+  "gcode_summary": [
+    "; model printing time: 12h 30m 30s; total estimated time: 12h 37m 12s",
+    "; total filament weight [g] : 109.24"
+  ],
+  "print_started": true,
+  "estimated_seconds": 45432,
+  "estimated_pla_g": 109.24,
+  "support_pla_g_displayed": 0.3,
+  "previous_support_pla_g_displayed": 29.08,
+  "outside_build_volume": false,
+  "slice_metadata_warnings": [
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "2",
+      "error_code": "10018003"
+    },
+    {
+      "msg": "not_support_traditional_timelapse",
+      "level": "3",
+      "error_code": "1000C003"
+    }
+  ],
+  "geometry_unchanged": true,
+  "targeted_support_contacts": {
+    "contacts": [
+      {
+        "height_mm": 7.791418099999998,
+        "area_mm2": 5.542728353084739,
+        "triangle_indices": [
+          119429,
+          119527
+        ],
+        "center_in_mesh_coordinates": [
+          -58.289814633333336,
+          3.286684675,
+          -19.7971992
+        ]
+      },
+      {
+        "height_mm": 4.514821999999999,
+        "area_mm2": 4.335335432895784,
+        "triangle_indices": [
+          198080,
+          197855,
+          198177,
+          197865,
+          198175,
+          198174,
+          198072,
+          198137,
+          198135,
+          198074,
+          197871,
+          197872,
+          198079,
+          198099,
+          198093,
+          198073,
+          197851,
+          197852,
+          197849,
+          197756,
+          197843,
+          197739,
+          197850,
+          197743,
+          197834
+        ],
+        "center_in_mesh_coordinates": [
+          57.35854797466667,
+          28.45573642933333,
+          -23.073795300000015
+        ]
+      },
+      {
+        "height_mm": 4.514821999999999,
+        "area_mm2": 3.8188903116892243,
+        "triangle_indices": [
+          215743,
+          217727,
+          215361,
+          217735,
+          215746,
+          217733,
+          215348,
+          217723,
+          217734,
+          215334,
+          215309,
+          215356,
+          215744,
+          217722,
+          217588,
+          217599,
+          215323,
+          217705,
+          215349,
+          215350
+        ],
+        "center_in_mesh_coordinates": [
+          13.128595106666666,
+          -54.76506869166667,
+          -23.07379530000001
+        ]
+      },
+      {
+        "height_mm": 4.514821999999999,
+        "area_mm2": 3.818883144571757,
+        "triangle_indices": [
+          275678,
+          275653,
+          276526,
+          275638,
+          275632,
+          275631,
+          275629,
+          275625,
+          275603,
+          289918,
+          289920,
+          289921,
+          289935,
+          289937,
+          276489,
+          276491,
+          276492,
+          276493,
+          276507,
+          276524
+        ],
+        "center_in_mesh_coordinates": [
+          49.94685388833334,
+          -42.88051427166668,
+          -23.07379530000001
+        ]
+      }
+    ],
+    "contact_regions": 4,
+    "painted_triangles": 67,
+    "geometry_unchanged": true,
+    "mesh_vertex_face_sha256": "696751e7e3b4786448f86d2a3a90d9244521032897d1e70a3ba753a836872077",
+    "settings": {
+      "enable_support": "1",
+      "support_type": "tree(manual)",
+      "support_on_build_plate_only": "1",
+      "support_critical_regions_only": "0",
+      "support_remove_small_overhang": "1",
+      "support_object_xy_distance": "0.5",
+      "support_top_z_distance": "0.24",
+      "support_bottom_z_distance": "0.24",
+      "support_threshold_angle": "15",
+      "max_bridge_length": "3"
+    },
+    "rationale": "Support the four oriel undersides while leaving mullions, tracery, sills and shallow coping free of support contacts."
+  },
+  "support_toolpath_check": {
+    "extruding_endpoints": 2629,
+    "separate_contact_groups_reached": 4,
+    "maximum_support_height_mm": 7.52,
+    "maximum_xy_distance_to_contact_center_mm": 9.17528983140648,
+    "contact_centers_on_plate_mm": [
+      [
+        69.72534436666668,
+        131.363163675,
+        7.791418099999998
+      ],
+      [
+        185.37370697466667,
+        156.53221542933335,
+        4.514821999999985
+      ],
+      [
+        141.14375410666668,
+        73.31141030833334,
+        4.514821999999988
+      ],
+      [
+        177.96201288833333,
+        85.19596472833334,
+        4.514821999999988
+      ]
+    ]
+  },
+  "files": [
+    {
+      "path": "deliverables/merton-detailed-freestanding-a1.3mf",
+      "size_bytes": 3744290,
+      "sha256": "e9528f2db6d0ae831b169802f0c1bef6e88f11a6f1be09ab96ff741be9793d03"
+    },
+    {
+      "path": "deliverables/merton-detailed-freestanding-a1.gcode.3mf",
+      "size_bytes": 23622859,
+      "sha256": "325702ae623b4f90d55104a39810c313abe87629a3563208f727cd4a413de179"
+    },
+    {
+      "path": "deliverables/merton-detailed-freestanding.stl",
+      "size_bytes": 14775684,
+      "sha256": "e118bfa6bcfb38d0b0fbe780f253105a62706e043d01996eb2043ef727d465f9"
+    }
+  ],
+  "print_launch": {
+    "date": "2026-10-17",
+    "timezone": "America/Los_Angeles",
+    "authorization": "Explicit user request after preparation: print it now",
+    "interface": "Bambu Studio GUI",
+    "job_name": "merton-detailed-freestanding-a1_Plate 1",
+    "printer_name": "3DP-039-180",
+    "printer_model": "Bambu Lab A1",
+    "nozzle_diameter_mm": 0.4,
+    "filament_type": "PLA",
+    "ams_slot": "A1",
+    "auto_bed_leveling": true,
+    "flow_dynamics_calibration": true,
+    "timelapse": false,
+    "transfer_completed": true,
+    "observed_printer_state": "Heatbed preheating",
+    "observed_percent": 0,
+    "observed_layer": 0,
+    "total_layers": 459,
+    "displayed_estimated_finish_local": "2026-10-17 22:16",
+    "completed_print_verified": false,
+    "note": "Snapshot of the verified launch, not live printer status. Finished-part quality has not been inspected."
+  }
+}

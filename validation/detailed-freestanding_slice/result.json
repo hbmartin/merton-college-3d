@@ -1,0 +1,68 @@
+{
+    "error_string": "Success.",
+    "export_time": 5114,
+    "layer_height": 0.11999999731779099,
+    "plate_index": 0,
+    "prepare_time": 144,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 399.8973388671875,
+                "Bridge": 163.6826629638672,
+                "Brim": 19.362186431884766,
+                "Custom": 392.7773742675781,
+                "Flush": 25.0,
+                "Gap infill": 44.163944244384766,
+                "Inner wall": 11421.4443359375,
+                "Internal solid infill": 3511.832763671875,
+                "Outer wall": 16154.2353515625,
+                "Overhang wall": 164.22451782226563,
+                "Sparse infill": 5320.494140625,
+                "Support": 12667.861328125,
+                "Support interface": 4.079174041748047,
+                "Top surface": 215.57603454589844,
+                "Travel": 13880.5888671875,
+                "Undefined": 13864.0625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 137.15386962890625,
+                    "total_used_g": 137.15386962890625
+                }
+            ],
+            "generate_support_material_time": 45834,
+            "id": 1,
+            "infill_time": 3099,
+            "layer_filament_change": 0,
+            "main_predication": 63976.37109375,
+            "make_perimeters_time": 6502,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 189.81045532226563,
+                        "height": 55.1772346496582,
+                        "width": 203.95892333984375,
+                        "x": 26.03569793701172,
+                        "y": 33.17124938964844,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "merton-detailed-freestanding.stl",
+                    "triangle_count": 295512
+                }
+            ],
+            "sliced_time": 65631,
+            "sliced_time_with_cache": 9743,
+            "total_predication": 64402.62109375,
+            "triangle_count": 295512,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 12.0,
+    "wall_loops": 3
+}

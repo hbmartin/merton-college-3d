@@ -2,6 +2,8 @@
 
 A new architectural model built after inspecting all five photographs in `images/`. The existing footprint, orientation and 220 mm site width are retained. Facade details are solid geometry, including the mullions and tracery; no textures or displacement maps are required.
 
+The later **[freestanding print project](../../deliverables/merton-detailed-freestanding-a1.3mf)** removes the site slab and uses four targeted support regions beneath the oriels. That version was sent to the A1 on 17 October 2026; the printer entered preheating, and finished-part quality remains unverified. See the [main README](../../README.md#freestanding-print-preparation-and-support-refinement) for the final settings, support changes, validation and reproduction steps. The two base-mounted projects below retain their original automatic supports.
+
 ## Files
 
 - [`../../deliverables/merton-detailed.stl`](../../deliverables/merton-detailed.stl): full college, 220 × 207.52 × 58.19 mm, approximately 1:641.

@@ -1,4 +1,83 @@
-# Merton College, Oxford — three models for the Bambu Lab A1
+# Merton College, Oxford — detailed models for the Bambu Lab A1
+
+The **[freestanding detailed A1 project](deliverables/merton-detailed-freestanding-a1.3mf)** is the final prepared version: the bottom site slab is removed, the buildings retain their original layout, and four small support areas sit beneath the projecting window bays. It uses **12% gyroid, three walls and 0.12 mm layers**, with an estimate of **12 h 37 min / 109.24 g PLA**, including **0.30 g of support material**. The print was sent from Bambu Studio on **17 October 2026**, after explicit authorization, and the printer entered heatbed preheating. A completed print and its physical quality have not yet been verified.
+
+| Final artifact | Purpose |
+|---|---|
+| [Editable A1 project](deliverables/merton-detailed-freestanding-a1.3mf) | Geometry, arranged building groups, process settings and painted support contacts; open as a project in Bambu Studio |
+| [Sliced plate](deliverables/merton-detailed-freestanding-a1.gcode.3mf) | Final exported toolpaths for the saved A1 / 0.4 mm / PLA configuration |
+| [Freestanding STL](deliverables/merton-detailed-freestanding.stl) | Geometry only; does not contain support painting or print settings |
+| [Mesh preview](approaches/detailed/preview-freestanding.png) | View of the buildings with the site slab removed |
+| [Print notes](deliverables/PRINT-NOTES.md) | Settings, handling guidance and reproduction summary |
+| [Final print audit](validation/freestanding_print_project.json) | Settings, file hashes, support-toolpath checks and the print-launch observation |
+
+## Freestanding print preparation and support refinement
+
+### Removing the site slab
+
+[prepare_freestanding.py](scripts/prepare_freestanding.py) cuts away the original **3 mm site slab**, with an additional **0.01 mm clearance** to remove coincident faces, then lowers the remaining geometry to the bed. The original scale and relative building positions are preserved. The result is **three connected building groups**, all standing at **Z = 0**, with open courtyards and no shared modeled base. Its smaller bounding box, **203.96 × 189.81 × 55.18 mm**, reflects slab removal rather than rescaling.
+
+The exported STL has **295,512 triangles**. Reloaded-mesh checks confirm three watertight, consistently wound, positive-volume components, zero boundary/nonmanifold edges, and bed contact for every group. The complete record is [freestanding_mesh.json](validation/freestanding_mesh.json).
+
+### Final print settings
+
+The user selected **12% gyroid with three walls** to balance rigidity, material use and print time. Bambu Studio **2.8.2.61** was used to review and re-slice the final project.
+
+| Setting | Final value |
+|---|---|
+| Printer / nozzle / filament profile | Bambu Lab A1 / 0.4 mm / Generic PLA |
+| Build plate | Textured PEI Plate |
+| Layer height / first layer | 0.12 mm / 0.20 mm |
+| Walls / wall generator | 3 / Arachne |
+| Infill | 12% gyroid |
+| Support mode | Manual tree supports, build plate only |
+| Support contact regions | Four projecting oriel undersides; 67 painted triangles |
+| Support XY separation | 0.50 mm |
+| Support top / bottom Z separation | 0.24 mm / 0.24 mm |
+| Top interface layers / spacing | 2 / 0.50 mm |
+| Maximum bridge length without support | 3 mm |
+| Small overhang support removal | Enabled |
+| Adhesion | 3 mm removable outer brim, 0.10 mm brim gap |
+| Raft | None |
+
+The brim is a thin, removable first-layer adhesion aid. It does not recreate the removed site slab.
+
+### Why the tree-like arms were removed
+
+The earlier automatic tree supports grew from the plate toward many shallow overhangs around the facades. Those branches were temporary print supports, separate from the architectural model. Their proximity to fine window stonework made removal awkward and risked damaging the mullions.
+
+The final project replaces broad automatic generation with **four painted underside regions beneath the projecting oriel bays**. [refine_window_supports.py](scripts/refine_window_supports.py) selects those regions from their modeled heights, areas and downward-facing normals, applies Bambu Studio support-enforcer attributes, and preserves the mesh vertices, faces and arrangement. The [contact record](validation/support_refinement/targeted_contacts.json) identifies all 67 painted triangles. Mullions, tracery, sills and shallow coping are left free of support contacts.
+
+| Bambu Studio GUI slice | Total time | Total PLA | Support PLA |
+|---|---:|---:|---:|
+| Freestanding model with broad automatic supports | About 17 h 35 min | 137.12 g | 29.08 g |
+| Final four-region manual supports | 12 h 37 min 12 s | 109.24 g | 0.30 g |
+
+The support toolpath reaches all four intended groups and stays below **7.52 mm**. The geometry is unchanged by support refinement. The final slice fits the build volume and has no floating-region warning; its remaining metadata warnings concern unsupported traditional timelapse, which was disabled when sending the print. Shallow trim and short window spans now rely on overhang and bridging performance, so their undersides still need physical inspection after printing.
+
+Earlier project backups and settings are retained in [validation/support_refinement](validation/support_refinement/). The command-line output in [validation/detailed-freestanding_slice](validation/detailed-freestanding_slice/) is the **preliminary automatic-support slice**, with its own estimates; the final GUI slice and current settings are the deliverables linked above and [freestanding_print_project.json](validation/freestanding_print_project.json).
+
+### Print launch and remaining physical checks
+
+Preparation and support refinement were completed without starting a print. After the user subsequently requested printing, the final job **`merton-detailed-freestanding-a1_Plate 1`** was sent through Bambu Studio to the **A1 named `3DP-039-180`**, using **PLA from AMS slot A1**. Auto bed leveling and flow dynamics calibration were **on**; timelapse was **off**.
+
+The transfer completed, and the device reported **“Heatbed preheating,” 0%, layer 0/459**, with a displayed finish estimate of **22:16 on 17 October 2026 (America/Los_Angeles)**. This is a launch observation, not a live status or a verified completion time. No completed-part inspection is recorded yet.
+
+Check adhesion when the first layer begins. After completion, let the plate cool, release the building groups gently, and remove the brim and four support groups in small sections while holding sturdy walls or bases. Avoid pulling against the mullions, tracery or chimney stacks. Record the finished print's window quality, bay undersides, support removal and any failures before treating this setup as physically validated.
+
+### Reproduce the final freestanding project
+
+With the documented Python environment, Bambu Studio installation and detailed source STL available, run from the repository root:
+
+```sh
+.venv/bin/python scripts/prepare_freestanding.py
+.venv/bin/python scripts/slice_candidates.py detailed-freestanding
+.venv/bin/python scripts/refine_window_supports.py
+```
+
+Then open `deliverables/merton-detailed-freestanding-a1.3mf` **as a project** in Bambu Studio, slice it, inspect the four low support groups in Preview, save the project, and export the plate sliced file as `deliverables/merton-detailed-freestanding-a1.gcode.3mf`.
+
+The support-refinement step is required: [a1_04_freestanding_process.json](settings/a1_04_freestanding_process.json) generates the preliminary automatic-support project and does not itself contain painted contacts. The refinement helper removes stale embedded G-code, so re-slicing afterward is essential. These commands overwrite generated files but never contact a printer. The final audit JSON is a saved verification snapshot; refresh its hashes and toolpath checks if rebuilding. To rebuild the detailed source STL first, follow the [detailed model instructions](approaches/detailed/README.md#rebuild).
 
 ## New detailed model from the supplied photographs
 
@@ -8,9 +87,13 @@ Both models pass independent mesh checks and were sliced successfully. Their pro
 
 [Photograph observations, modeling assumptions and rebuild instructions](approaches/detailed/README.md) · [Full-model preview](approaches/detailed/preview-southeast.png) · [Mullioned-window close-up](approaches/detailed/preview-fellows-windows.png) · [Chapel close-up](approaches/detailed/preview-chapel.png)
 
+All **five supplied photographs** were inspected. They informed solid geometry for mullions, transoms, Gothic heads, recessed panes, stepped buttresses, pierced parapets, coped gables and chimney-stack collars and flue mouths. The builder authors **35 stepped buttresses, 15 facade gables, 65 dormers, 31 chimney stacks, four oriels and eight tower pinnacles**, plus hundreds of window assemblies. These are authored feature counts, not surveyed counts of the real college. Full-college mullions are nominally **0.50 mm wide**; the enlarged chapel provides more space for the same details. Hidden elevations and dimensions remain interpreted from the earlier mapped footprints, roof estimates and photographic evidence. The supplied `images/` photographs are excluded from version control.
+
+## Earlier comparison models
+
 This project turns the ideas in the original research into three printable models of Merton College's historic core: an architectural interpretation, a measured LiDAR relief, and a hybrid combining measured roofs with a reconstructed chapel tower. The approaches were developed in parallel so their results could be compared at the same scale.
 
-**All three full models and three chapel samples passed mesh checks. Four Bambu Studio projects were sliced successfully for an A1 with the user's standard 0.4 mm nozzle.** No physical print has been tested or sent to a printer. No API keys, paid downloads, or additional modeling apps were needed.
+**All three original full models and three chapel samples passed mesh checks. Four Bambu Studio projects were sliced successfully for an A1 with the user's standard 0.4 mm nozzle.** These comparison variants have no recorded physical print test; the later freestanding detailed version was sent to the printer as documented above. No API keys, paid downloads, or additional modeling apps were needed.
 
 Work and source checks were completed on **17 October 2026**. The LiDAR itself records an older survey, as explained below.
 
@@ -25,7 +108,7 @@ Work and source checks were completed on **17 October 2026**. The LiDAR itself r
 
 These are estimates from actual local slices, rounded for readability. The exact seconds, grams, and project SHA-256 hashes are in [validation/final_projects.json](validation/final_projects.json).
 
-The **architectural model is the cleanest first print**. Choose the hybrid if retaining the real roof variation matters more than having uniformly clean roof surfaces. Use the LiDAR model as the measured-surface benchmark. The comparison plate lets you judge the tower and nearby roofs before committing to a complete model.
+Among the original comparison candidates, the **architectural model has the cleanest interpreted surfaces**. Choose the hybrid if retaining the real roof variation matters more than having uniformly clean roof surfaces. Use the LiDAR model as the measured-surface benchmark. The comparison plate lets you judge the tower and nearby roofs at a smaller material cost. The later detailed models above add the requested facade features.
 
 The 3MFs include model geometry, saved project settings, slice output, and thumbnails. The STLs contain the geometry alone, in millimetres, for use with your own settings. Open a 3MF **as a project** in Bambu Studio, select the filament and build plate you actually use, and slice again if you change the saved configuration. Print with the flat base down.
 
@@ -33,7 +116,7 @@ For a shorter reference, see [RESULTS.md](RESULTS.md) or the [print notes](deliv
 
 ## Site coverage, scale, and coordinates
 
-All three models share the same rectangular crop, horizontal scale, orientation, and minimum base thickness. This makes differences in the buildings easier to judge.
+The three original comparison models share the same rectangular crop, horizontal scale, orientation, and minimum base thickness. This makes differences in the buildings easier to judge. The freestanding detailed version retains the scale and building layout but removes the slab, as documented above.
 
 | Property | Value |
 |---|---|
@@ -234,7 +317,7 @@ Each sample is **54.60993 × 62.41135 mm** and retains the full model's approxim
 
 The [comparison 3MF](deliverables/merton-chapel-comparison-a1.3mf) arranges all three samples on one A1 plate. Objects are named for their source model; delete two in Bambu Studio to print just one. [samples.json](deliverables/chapel-samples/samples.json) records the crop, dimensions, and unchanged scale.
 
-## A1 profiles, slicing, and validation
+## Original comparison profiles, slicing, and validation
 
 ### Saved print configuration
 
@@ -259,7 +342,7 @@ The plate selection was explicitly corrected to Textured PEI before the final sl
 
 [inspect_mesh.py](scripts/inspect_mesh.py) reloads the exported STLs and checks finite coordinates, watertightness, consistent winding, positive signed volume, boundary and nonmanifold edge counts, connected components, Z = 0 placement, and fit within the configured A1 volume. It records a SHA-256 hash for each file. This inspection does not perform Boolean repairs or fill holes to hide a failure.
 
-All **six delivered STLs** passed: each has one connected component, zero boundary edges, zero nonmanifold edges, a flat bottom, and dimensions within the A1 limits. The LiDAR and hybrid builders additionally check degenerate triangles. The full-resolution model statistics are:
+All **six original comparison STLs** passed: each has one connected component, zero boundary edges, zero nonmanifold edges, a flat bottom, and dimensions within the A1 limits. The LiDAR and hybrid builders additionally check degenerate triangles. The full-resolution model statistics are:
 
 | Model | Vertices | Triangles | Height | Enclosed mesh volume |
 |---|---:|---:|---:|---:|
@@ -279,7 +362,7 @@ All four final slices returned **`Success.`**, with no plate warning message. Ba
 
 Two command-line details were resolved during setup: presets needed their inheritance and includes expanded, and `--export-3mf` needed a filename alone with a separate absolute `--outputdir`. The final slicing script incorporates both fixes. After the last architectural refinements, the dependent outputs were repackaged and sliced again so the final projects and hashes match the delivered meshes.
 
-Each `validation/<candidate>_slice/` directory contains the result JSON, exported project, and an actual slicer thumbnail. Logs are `validation/<candidate>_slice.log`. [final_projects.json](validation/final_projects.json) is the aggregate final audit snapshot. Earlier candidate/probe records are retained for development history; use the files named `final_*` for the delivered state.
+Each `validation/<candidate>_slice/` directory contains the result JSON, exported project, and an actual slicer thumbnail. Logs are `validation/<candidate>_slice.log`. [final_projects.json](validation/final_projects.json) is the aggregate audit snapshot for these original comparison candidates. Later detailed models use [detailed_projects.json](validation/detailed_projects.json), and the final freestanding project uses [freestanding_print_project.json](validation/freestanding_print_project.json). Earlier candidate/probe records remain as development history.
 
 ## Interactive comparison and visual inspection
 
@@ -309,15 +392,19 @@ approaches/
   architectural/                OSM data, roof parameters, tower, builder and master
   hybrid/                       Clipped roofs, mask, processing record, builder and master
   existing/                     External-model research and public listing evidence
+  detailed/                     Photo-informed builder, feature records and detail previews
 deliverables/
-  merton-*.stl                  Three full-resolution printable meshes
-  merton-*-a1.3mf               Three sliced A1 projects and the sample project
+  merton-*.stl                  Original, detailed, enlarged-chapel and freestanding meshes
+  merton-*-a1.3mf               Bambu Studio projects for the model variants
+  merton-*-a1.gcode.3mf         Final freestanding sliced plate
   chapel-samples/               Three full-scale chapel crops and their metadata
   PRINT-NOTES.md                Brief opening and printing instructions
 scripts/
   package_candidates.py         Copy masters and construct sample crops
   prepare_profiles.py           Flatten installed A1 presets into settings JSON
   slice_candidates.py           Slice and export local A1 projects
+  prepare_freestanding.py       Remove the slab and validate bed contact for all groups
+  refine_window_supports.py     Paint the four oriel underside support regions
   inspect_mesh.py               Inspect delivered geometry and record hashes
   build_comparison.py           Embed reduced preview geometry
   comparison-template.html      Interactive comparison interface
@@ -413,9 +500,9 @@ The visualization output directory is currently an absolute local path in that s
 
 ## Remaining decisions and possible follow-up work
 
-The completed comparison is ready for a first physical test. The smallest useful next step is to print one chapel sample, or all three, and judge pinnacle strength, roof texture, and layer visibility using the actual filament and plate. A successful slice does not establish those results.
+The freestanding detailed print has been launched; the next result to record is the completed part's adhesion, fine-detail quality and support removal. The original comparison samples remain available for judging roof texture and the alternative tower treatments. A successful slice or print launch does not establish the quality of a finished part.
 
-Further work could include refining the preferred candidate from better architectural measurements; adding selected windows, chimneys, dormers, or passages where they remain printable at this scale; obtaining a higher-resolution authorized survey; or expanding the site through a coordinated change to every builder's crop. A different scale or nozzle would require another detail and slice review.
+Further work could include replacing interpreted dimensions with architectural measurements, refining window and chimney details based on the physical print, opening selected passages where printable, obtaining a higher-resolution authorized survey, or expanding the site through a coordinated change to every builder's crop. A different scale or nozzle would require another detail and slice review.
 
 The optional fourth comparison remains the authorized MakerWorld city-model crop. It requires the actual downloaded 3MF before coverage, geometry quality, and an A1 estimate can be established. No app or API-key setup is pending for the three completed models.
 

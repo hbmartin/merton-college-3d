@@ -1,0 +1,85 @@
+{
+  "source": "deliverables/merton-detailed.stl",
+  "output": "deliverables/merton-detailed-freestanding.stl",
+  "removed_base_mm": 3.0,
+  "cut_clearance_mm": 0.01,
+  "cut_height_mm": 3.01,
+  "scale_change": 1.0,
+  "layout_preserved": true,
+  "dimensions_mm": [
+    203.9589,
+    189.8105,
+    55.1772
+  ],
+  "bounds_mm": [
+    [
+      7.046826,
+      7.972983,
+      0.0
+    ],
+    [
+      211.005753,
+      197.783447,
+      55.177235
+    ]
+  ],
+  "triangles": 295512,
+  "watertight": true,
+  "winding_consistent": true,
+  "boundary_or_nonmanifold_edges": 0,
+  "connected_building_groups": 3,
+  "all_groups_stand_at_z0": true,
+  "bottom_contact_area_mm2": 10142.714,
+  "old_slab_area_mm2": 45653.901,
+  "removed_solid_volume_mm3": 137063.805,
+  "components": [
+    {
+      "triangles": 160324,
+      "volume_mm3": 102050.39,
+      "bounds_mm": [
+        [
+          71.3551,
+          45.7197,
+          0.0
+        ],
+        [
+          211.0058,
+          197.7834,
+          29.4013
+        ]
+      ]
+    },
+    {
+      "triangles": 121398,
+      "volume_mm3": 83898.222,
+      "bounds_mm": [
+        [
+          7.0468,
+          53.8662,
+          0.0
+        ],
+        [
+          95.5226,
+          157.095,
+          55.1772
+        ]
+      ]
+    },
+    {
+      "triangles": 13790,
+      "volume_mm3": 13193.65,
+      "bounds_mm": [
+        [
+          11.0972,
+          7.973,
+          0.0
+        ],
+        [
+          45.0003,
+          54.7664,
+          24.2524
+        ]
+      ]
+    }
+  ]
+}

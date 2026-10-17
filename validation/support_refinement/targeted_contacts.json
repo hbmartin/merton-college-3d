@@ -1,0 +1,132 @@
+{
+  "contacts": [
+    {
+      "height_mm": 7.791418099999998,
+      "area_mm2": 5.542728353084739,
+      "triangle_indices": [
+        119429,
+        119527
+      ],
+      "center_in_mesh_coordinates": [
+        -58.289814633333336,
+        3.286684675,
+        -19.7971992
+      ]
+    },
+    {
+      "height_mm": 4.514821999999999,
+      "area_mm2": 4.335335432895784,
+      "triangle_indices": [
+        198080,
+        197855,
+        198177,
+        197865,
+        198175,
+        198174,
+        198072,
+        198137,
+        198135,
+        198074,
+        197871,
+        197872,
+        198079,
+        198099,
+        198093,
+        198073,
+        197851,
+        197852,
+        197849,
+        197756,
+        197843,
+        197739,
+        197850,
+        197743,
+        197834
+      ],
+      "center_in_mesh_coordinates": [
+        57.35854797466667,
+        28.45573642933333,
+        -23.073795300000015
+      ]
+    },
+    {
+      "height_mm": 4.514821999999999,
+      "area_mm2": 3.8188903116892243,
+      "triangle_indices": [
+        215743,
+        217727,
+        215361,
+        217735,
+        215746,
+        217733,
+        215348,
+        217723,
+        217734,
+        215334,
+        215309,
+        215356,
+        215744,
+        217722,
+        217588,
+        217599,
+        215323,
+        217705,
+        215349,
+        215350
+      ],
+      "center_in_mesh_coordinates": [
+        13.128595106666666,
+        -54.76506869166667,
+        -23.07379530000001
+      ]
+    },
+    {
+      "height_mm": 4.514821999999999,
+      "area_mm2": 3.818883144571757,
+      "triangle_indices": [
+        275678,
+        275653,
+        276526,
+        275638,
+        275632,
+        275631,
+        275629,
+        275625,
+        275603,
+        289918,
+        289920,
+        289921,
+        289935,
+        289937,
+        276489,
+        276491,
+        276492,
+        276493,
+        276507,
+        276524
+      ],
+      "center_in_mesh_coordinates": [
+        49.94685388833334,
+        -42.88051427166668,
+        -23.07379530000001
+      ]
+    }
+  ],
+  "contact_regions": 4,
+  "painted_triangles": 67,
+  "geometry_unchanged": true,
+  "mesh_vertex_face_sha256": "696751e7e3b4786448f86d2a3a90d9244521032897d1e70a3ba753a836872077",
+  "settings": {
+    "enable_support": "1",
+    "support_type": "tree(manual)",
+    "support_on_build_plate_only": "1",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "1",
+    "support_object_xy_distance": "0.5",
+    "support_top_z_distance": "0.24",
+    "support_bottom_z_distance": "0.24",
+    "support_threshold_angle": "15",
+    "max_bridge_length": "3"
+  },
+  "rationale": "Support the four oriel undersides while leaving mullions, tracery, sills and shallow coping free of support contacts."
+}

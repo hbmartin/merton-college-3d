@@ -23,7 +23,7 @@ def run(key):
         inputs=[ROOT/'deliverables'/f'merton-{key}.stl']
         filename=f'merton-{key}-a1.3mf'
     command=[BAMBU,'--debug','2','--load-settings',
-        ';'.join(str(ROOT/'settings'/f'a1_04_{kind}.json') for kind in ['machine','detailed_process' if key.startswith('detailed') else 'process']),
+        ';'.join(str(ROOT/'settings'/f'a1_04_{kind}.json') for kind in ['machine','freestanding_process' if key=='detailed-freestanding' else 'detailed_process' if key.startswith('detailed') else 'process']),
         '--load-filaments',str(ROOT/'settings/a1_04_filament.json'),
         '--arrange','1','--orient','0','--slice','0',
         '--export-3mf',filename,'--outputdir',str(output),*map(str,inputs)]
@@ -43,6 +43,13 @@ def run(key):
         if key.startswith('detailed'):
             assert settings['wall_generator']=='arachne'
             assert settings['layer_height']=='0.12'
+        if key=='detailed-freestanding':
+            assert settings['sparse_infill_density']=='12%'
+            assert settings['sparse_infill_pattern']=='gyroid'
+            assert settings['wall_loops']=='3'
+            assert settings['brim_type']=='outer_only'
+            assert settings['brim_width']=='3'
+            assert settings['raft_layers']=='0'
         assert 'Metadata/plate_1.gcode' in archive.namelist()
         # Export a small actual slicer thumbnail for the build evidence.
         (output/'slicer-thumbnail.png').write_bytes(archive.read('Metadata/plate_1.png'))
@@ -62,5 +69,5 @@ def run(key):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('models',nargs='+',choices=['lidar','architectural','hybrid','samples','detailed','detailed-chapel-1-333'])
+    parser.add_argument('models',nargs='+',choices=['lidar','architectural','hybrid','samples','detailed','detailed-chapel-1-333','detailed-freestanding'])
     for model in parser.parse_args().models:run(model)
