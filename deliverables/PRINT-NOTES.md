@@ -1,5 +1,13 @@
 # Merton College A1 candidates
 
+## New detailed models
+
+`merton-detailed-a1.3mf` is the new full-college model (220 × 207.52 × 58.19 mm). `merton-detailed-chapel-1-333-a1.3mf` is an enlarged standalone chapel (148.51 × 129.77 × 111.81 mm). Both have matching STLs and passed independent geometry checks.
+
+These two projects use **0.12 mm layers, Arachne walls and automatic tree supports**, with 3 walls, 12% gyroid, Generic PLA and the A1 0.4 mm nozzle. Supports are enabled because the initial slices flagged floating regions. Choose your actual filament and plate before printing. No physical print has been tested. Fine window/tracery geometry is thickened; the model remains an architectural interpretation of the reference photographs. [Detailed source and build notes](../approaches/detailed/README.md).
+
+## Earlier candidates
+
 Open any `*-a1.3mf` in Bambu Studio as a project. Choose your actual filament and plate before printing. The saved profiles use an A1 with a standard 0.4 mm nozzle, Generic PLA, Textured PEI Plate, 0.16 mm layers, 3 walls, 12% gyroid and supports off. No physical print has been tested.
 
 The full models are 220 × 207.52 mm. Architectural and hybrid are 57.39 mm tall; LiDAR is 58.79 mm tall. All are checked, connected watertight solids and have successfully sliced with the A1 profile. The chapel comparison project contains three 54.61 × 62.41 mm samples at the same scale, approximately 5 h 04 min and 84 g PLA for the entire plate.

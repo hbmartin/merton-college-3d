@@ -1,5 +1,13 @@
 # Merton College, Oxford — three models for the Bambu Lab A1
 
+## New detailed model from the supplied photographs
+
+The new [full-college A1 project](deliverables/merton-detailed-a1.3mf) and [STL](deliverables/merton-detailed.stl) add actual mullions, transoms, Gothic tracery, stepped buttresses, coped gables, projecting oriels, chimney stacks and pierced parapets. The full model is 220 × 207.52 × 58.19 mm and contains 295,336 triangles. The [enlarged chapel project](deliverables/merton-detailed-chapel-1-333-a1.3mf) makes the window and tower detail easier to inspect.
+
+Both models pass independent mesh checks and were sliced successfully. Their projects use **0.12 mm layers, Arachne walls and automatic tree supports** on the A1 with a 0.4 mm nozzle. The supported slices have no plate warning messages. Estimates: **21 h 05 min / 232 g PLA** for the full college; **15 h 04 min / 205 g PLA** for the chapel. No physical print has been tested. The original models remain available below.
+
+[Photograph observations, modeling assumptions and rebuild instructions](approaches/detailed/README.md) · [Full-model preview](approaches/detailed/preview-southeast.png) · [Mullioned-window close-up](approaches/detailed/preview-fellows-windows.png) · [Chapel close-up](approaches/detailed/preview-chapel.png)
+
 This project turns the ideas in the original research into three printable models of Merton College's historic core: an architectural interpretation, a measured LiDAR relief, and a hybrid combining measured roofs with a reconstructed chapel tower. The approaches were developed in parallel so their results could be compared at the same scale.
 
 **All three full models and three chapel samples passed mesh checks. Four Bambu Studio projects were sliced successfully for an A1 with the user's standard 0.4 mm nozzle.** No physical print has been tested or sent to a printer. No API keys, paid downloads, or additional modeling apps were needed.

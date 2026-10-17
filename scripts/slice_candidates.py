@@ -23,7 +23,7 @@ def run(key):
         inputs=[ROOT/'deliverables'/f'merton-{key}.stl']
         filename=f'merton-{key}-a1.3mf'
     command=[BAMBU,'--debug','2','--load-settings',
-        ';'.join(str(ROOT/'settings'/f'a1_04_{kind}.json') for kind in ['machine','process']),
+        ';'.join(str(ROOT/'settings'/f'a1_04_{kind}.json') for kind in ['machine','detailed_process' if key.startswith('detailed') else 'process']),
         '--load-filaments',str(ROOT/'settings/a1_04_filament.json'),
         '--arrange','1','--orient','0','--slice','0',
         '--export-3mf',filename,'--outputdir',str(output),*map(str,inputs)]
@@ -39,7 +39,10 @@ def run(key):
         assert settings['printer_model']=='Bambu Lab A1'
         assert settings['nozzle_diameter']==['0.4']
         assert settings['curr_bed_type']=='Textured PEI Plate'
-        assert settings['enable_support']=='0'
+        assert settings['enable_support']==('1' if key.startswith('detailed') else '0')
+        if key.startswith('detailed'):
+            assert settings['wall_generator']=='arachne'
+            assert settings['layer_height']=='0.12'
         assert 'Metadata/plate_1.gcode' in archive.namelist()
         # Export a small actual slicer thumbnail for the build evidence.
         (output/'slicer-thumbnail.png').write_bytes(archive.read('Metadata/plate_1.png'))
@@ -59,5 +62,5 @@ def run(key):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('models',nargs='+',choices=['lidar','architectural','hybrid','samples'])
+    parser.add_argument('models',nargs='+',choices=['lidar','architectural','hybrid','samples','detailed','detailed-chapel-1-333'])
     for model in parser.parse_args().models:run(model)

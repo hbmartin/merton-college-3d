@@ -1,0 +1,65 @@
+{
+    "error_string": "Success.",
+    "export_time": 4095,
+    "layer_height": 0.11999999731779099,
+    "plate_index": 0,
+    "prepare_time": 152,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 1064.453369140625,
+                "Bridge": 2013.7967529296875,
+                "Custom": 393.12738037109375,
+                "Flush": 25.0,
+                "Gap infill": 50.66794967651367,
+                "Inner wall": 11776.2236328125,
+                "Internal solid infill": 9088.14453125,
+                "Outer wall": 16665.4609375,
+                "Overhang wall": 164.41769409179688,
+                "Sparse infill": 7482.23388671875,
+                "Top surface": 980.5663452148438,
+                "Travel": 7935.77587890625,
+                "Undefined": 7919.2490234375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 205.22959899902344,
+                    "total_used_g": 205.22959899902344
+                }
+            ],
+            "generate_support_material_time": 756,
+            "id": 1,
+            "infill_time": 3447,
+            "layer_filament_change": 0,
+            "main_predication": 57255.44921875,
+            "make_perimeters_time": 8794,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 207.51773071289063,
+                        "height": 58.187232971191406,
+                        "width": 220.0,
+                        "x": 17.999990463256836,
+                        "y": 24.241140365600586,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "merton-detailed.stl",
+                    "triangle_count": 295336
+                }
+            ],
+            "sliced_time": 19072,
+            "sliced_time_with_cache": 5667,
+            "total_predication": 57682.05078125,
+            "triangle_count": 295336,
+            "warning_message": "It seems object merton-detailed.stl has floating regions. Please re-orient the object or enable support generation."
+        }
+    ],
+    "sparse_infill_density": 12.0,
+    "wall_loops": 3
+}

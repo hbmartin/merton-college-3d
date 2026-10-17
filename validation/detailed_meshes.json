@@ -1,0 +1,70 @@
+[
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-detailed.stl",
+    "sha256": "4a5a575c1d52548a7f72df794e8b447b7327a9b861c91e5bf8b8c74d5577cce6",
+    "vertices": 147500,
+    "triangles": 295336,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        220.0,
+        207.517731,
+        58.187233
+      ]
+    ],
+    "dimensions_mm": [
+      220.0,
+      207.5177,
+      58.1872
+    ],
+    "volume_mm3": 336206.068,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  },
+  {
+    "file": "/Users/haroldmartin/Downloads/merton-college/deliverables/merton-detailed-chapel-1-333.stl",
+    "sha256": "601ea522c0d4bd25a8a939ab4c0f2001337b0bea3ecc6d165d25a81131eee07d",
+    "vertices": 39795,
+    "triangles": 79838,
+    "bounds_mm": [
+      [
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      [
+        148.513779,
+        129.770508,
+        111.809998
+      ]
+    ],
+    "dimensions_mm": [
+      148.5138,
+      129.7705,
+      111.81
+    ],
+    "volume_mm3": 533314.24,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "connected_components": 1,
+    "sits_flat_at_z0": true,
+    "fits_a1_256_cube": true,
+    "finite_vertices": true,
+    "geometry_pass": true
+  }
+]

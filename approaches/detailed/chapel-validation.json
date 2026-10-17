@@ -1,0 +1,21 @@
+{
+  "file": "deliverables/merton-detailed-chapel-1-333.stl",
+  "dimensions_mm": [
+    148.5138,
+    129.7705,
+    111.81
+  ],
+  "triangles": 79838,
+  "vertices": 39795,
+  "watertight": true,
+  "winding_consistent": true,
+  "connected_components": 1,
+  "nonmanifold_or_boundary_edges": 0,
+  "volume_mm3": 533314.2395346389,
+  "minimum_z": 0.0,
+  "filled_inaccessible_cavities": 0,
+  "pruned_numerical_shells": 0,
+  "separated_coincident_vertices": 46,
+  "maximum_vertex_separation_mm": 0.0006928203230275509,
+  "surface_simplification_tolerance_mm": 0.01
+}

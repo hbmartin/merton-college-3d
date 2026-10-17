@@ -1,0 +1,189 @@
+[
+  {
+    "building": "Mob 6",
+    "triangles": 13678,
+    "exposed_facades": 3,
+    "eaves_agl_m": 8.32,
+    "ridge_agl_m": 10.82
+  },
+  {
+    "building": "Hall",
+    "triangles": 26590,
+    "exposed_facades": 4,
+    "eaves_agl_m": 11.29,
+    "ridge_agl_m": 16.03
+  },
+  {
+    "building": "Front 4",
+    "triangles": 7472,
+    "exposed_facades": 2,
+    "eaves_agl_m": 8.48,
+    "ridge_agl_m": 10.98
+  },
+  {
+    "building": "Upper and Lower Libraries",
+    "triangles": 22422,
+    "exposed_facades": 5,
+    "eaves_agl_m": 6.54,
+    "ridge_agl_m": 10.88
+  },
+  {
+    "building": "Fellows' 1",
+    "triangles": 22732,
+    "exposed_facades": 2,
+    "eaves_agl_m": 9.75,
+    "ridge_agl_m": 12.25
+  },
+  {
+    "building": "Fellows' 2",
+    "triangles": 17662,
+    "exposed_facades": 2,
+    "eaves_agl_m": 9.6,
+    "ridge_agl_m": 12.1
+  },
+  {
+    "building": "Fellows' 3",
+    "triangles": 20802,
+    "exposed_facades": 3,
+    "eaves_agl_m": 9.55,
+    "ridge_agl_m": 12.15
+  },
+  {
+    "building": "Fellows' 5",
+    "triangles": 17292,
+    "exposed_facades": 2,
+    "eaves_agl_m": 9.68,
+    "ridge_agl_m": 12.18
+  },
+  {
+    "building": "Fitzjames",
+    "triangles": 4328,
+    "exposed_facades": 2,
+    "eaves_agl_m": 8.44,
+    "ridge_agl_m": 10.94
+  },
+  {
+    "building": "Front 1",
+    "triangles": 3714,
+    "exposed_facades": 3,
+    "eaves_agl_m": 9.31,
+    "ridge_agl_m": 11.81
+  },
+  {
+    "building": "Front 2",
+    "triangles": 6454,
+    "exposed_facades": 2,
+    "eaves_agl_m": 8.97,
+    "ridge_agl_m": 11.47
+  },
+  {
+    "building": "Front 3",
+    "triangles": 6504,
+    "exposed_facades": 2,
+    "eaves_agl_m": 8.94,
+    "ridge_agl_m": 11.44
+  },
+  {
+    "building": "Front 5",
+    "triangles": 13132,
+    "exposed_facades": 5,
+    "eaves_agl_m": 8.5,
+    "ridge_agl_m": 12.29
+  },
+  {
+    "building": "Kitchens and Savile Room",
+    "triangles": 7332,
+    "exposed_facades": 3,
+    "eaves_agl_m": 9.08,
+    "ridge_agl_m": 12.18
+  },
+  {
+    "building": "Lodge",
+    "triangles": 7672,
+    "exposed_facades": 2,
+    "eaves_agl_m": 17.2,
+    "ridge_agl_m": 17.2
+  },
+  {
+    "building": "Mob 1",
+    "triangles": 7698,
+    "exposed_facades": 3,
+    "eaves_agl_m": 10.48,
+    "ridge_agl_m": 12.98
+  },
+  {
+    "building": "Mob 2",
+    "triangles": 10792,
+    "exposed_facades": 3,
+    "eaves_agl_m": 7.96,
+    "ridge_agl_m": 10.46
+  },
+  {
+    "building": "Mob 5",
+    "triangles": 9488,
+    "exposed_facades": 2,
+    "eaves_agl_m": 8.31,
+    "ridge_agl_m": 10.86
+  },
+  {
+    "building": "St Alban's 1",
+    "triangles": 6740,
+    "exposed_facades": 2,
+    "eaves_agl_m": 11.24,
+    "ridge_agl_m": 14.03
+  },
+  {
+    "building": "St Alban's 2",
+    "triangles": 9390,
+    "exposed_facades": 2,
+    "eaves_agl_m": 11.73,
+    "ridge_agl_m": 14.23
+  },
+  {
+    "building": "St Alban's 3",
+    "triangles": 5150,
+    "exposed_facades": 2,
+    "eaves_agl_m": 12.17,
+    "ridge_agl_m": 14.67
+  },
+  {
+    "building": "St Alban's 4",
+    "triangles": 6432,
+    "exposed_facades": 2,
+    "eaves_agl_m": 11.38,
+    "ridge_agl_m": 14.04
+  },
+  {
+    "building": "St Alban's 5",
+    "triangles": 9574,
+    "exposed_facades": 3,
+    "eaves_agl_m": 11.09,
+    "ridge_agl_m": 13.75
+  },
+  {
+    "building": "Fellows' 4",
+    "triangles": 25424,
+    "exposed_facades": 3,
+    "eaves_agl_m": 9.55,
+    "ridge_agl_m": 12.17
+  },
+  {
+    "building": "Grove II",
+    "triangles": 9808,
+    "exposed_facades": 5,
+    "eaves_agl_m": 8.39,
+    "ridge_agl_m": 13.04
+  },
+  {
+    "building": "Grove I",
+    "triangles": 9916,
+    "exposed_facades": 5,
+    "eaves_agl_m": 8.62,
+    "ridge_agl_m": 13.06
+  },
+  {
+    "building": "Chapel tower",
+    "triangles": 42836,
+    "detail": "Paired four-light Gothic belfry windows, tracery, transoms, nested archivolts, quatrefoil frieze, pierced parapet, eight crocketed pinnacles"
+  }
+]

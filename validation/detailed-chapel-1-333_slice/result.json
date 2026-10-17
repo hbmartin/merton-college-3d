@@ -1,0 +1,67 @@
+{
+    "error_string": "Success.",
+    "export_time": 2688,
+    "layer_height": 0.11999999731779099,
+    "plate_index": 0,
+    "prepare_time": 44,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 473.9400939941406,
+                "Bridge": 802.8347778320313,
+                "Custom": 393.0408020019531,
+                "Flush": 25.0,
+                "Gap infill": 21.606874465942383,
+                "Inner wall": 11754.91015625,
+                "Internal solid infill": 4280.76953125,
+                "Outer wall": 12243.1181640625,
+                "Overhang wall": 137.44577026367188,
+                "Sparse infill": 13177.6357421875,
+                "Support": 4095.37255859375,
+                "Support interface": 4.448151111602783,
+                "Top surface": 462.81475830078125,
+                "Travel": 6361.58251953125,
+                "Undefined": 6344.81884765625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL99",
+                    "id": 1,
+                    "main_used_g": 205.39907836914063,
+                    "total_used_g": 205.39907836914063
+                }
+            ],
+            "generate_support_material_time": 2672,
+            "id": 1,
+            "infill_time": 1293,
+            "layer_filament_change": 0,
+            "main_predication": 53795.5703125,
+            "make_perimeters_time": 2053,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 129.7705078125,
+                        "height": 111.80999755859375,
+                        "width": 148.51377868652344,
+                        "x": 53.74311828613281,
+                        "y": 63.114749908447266,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "merton-detailed-chapel-1-333.stl",
+                    "triangle_count": 79838
+                }
+            ],
+            "sliced_time": 9457,
+            "sliced_time_with_cache": 3264,
+            "total_predication": 54221.84765625,
+            "triangle_count": 79838,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 12.0,
+    "wall_loops": 3
+}

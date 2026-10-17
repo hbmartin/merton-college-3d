@@ -1,0 +1,28 @@
+[
+  {
+    "file": "deliverables/merton-detailed-a1.3mf",
+    "sha256": "54f50e0a52fa86a5ed8c65eb9dc2521d3f456864f07af279a4671639468f4272",
+    "printer_model": "Bambu Lab A1",
+    "layer_height_mm": 0.12,
+    "wall_generator": "arachne",
+    "supports_enabled": true,
+    "support_type": "tree(auto)",
+    "seconds": 75907.6484375,
+    "pla_grams": 231.64622497558594,
+    "plate_warnings": [],
+    "result": "Success."
+  },
+  {
+    "file": "deliverables/merton-detailed-chapel-1-333-a1.3mf",
+    "sha256": "7757c9250c3efe65e851ceca2644686527aed1741ff045ddd1c5ac11c1312cc0",
+    "printer_model": "Bambu Lab A1",
+    "layer_height_mm": 0.12,
+    "wall_generator": "arachne",
+    "supports_enabled": true,
+    "support_type": "tree(auto)",
+    "seconds": 54221.84765625,
+    "pla_grams": 205.39907836914062,
+    "plate_warnings": [],
+    "result": "Success."
+  }
+]
